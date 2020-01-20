@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src='../lib/jquery-3.1.1.min.js'></script>
+<script type="text/javascript">
+$(function(){
+// 	$('li').click(function(){
+// 		//$('#result').text($(this).text());
+// 		$('#result').text(this.innerHTML);
+// 	});
+
+
+	//bind - > one 한번만 실행된다
+// 	$('li').bind('click',function(){
+// 		$('#result').text($(this).text());
+// 	});
+	
+	$('ul').on('click','li',function(){
+		$('#result').text($(this).text());
+	});
+	
+	$('h1').bind('click',function(){
+		var li = $('<li/>').html(new Date());
+		$('ul').append(li);
+		
+	});
+	$('h1').css('cursor','pointer');
+	$('ul').css('color' , "#ff00ff");
+	
+});
+</script>
+</head>
+<body>
+	<h1>이벤트</h1>
+	<ul>
+		<li>탕슉</li>
+		<li>양장피</li>
+		<li>떡볶이</li>
+		<li>밥</li>
+	</ul>
+	<div id=result></div>
+</body>
+</html>

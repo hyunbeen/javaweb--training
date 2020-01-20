@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+
+body{
+height : 500px;
+width : 700px;
+}
+
+#bcategory{
+clear : both;
+float: top;
+margin-left : 100px;
+margin-right : 100px;
+}
+
+#menutbl{
+	clear:void;
+	float : left;
+}
+
+
+</style>
+
+<script language="JavaScript">
+	document.write("<div id = 'bcategory'>")
+	document.write("<table>");
+	
+		document.write("<tr>");
+		for(i=0; i<6; i++) {
+			  
+			  document.write("<td><input type='button' value = '관리메뉴'></td>");
+			 
+		 
+		  }
+		document.write("</tr>");
+	
+  document.write("</table>");
+  document.write("</div>");
+  document.write("</br>")
+  
+</script>
+
+<script language="JavaScript">
+	document.write("<div id = 'menutbl'>")
+	document.write("<table>");
+	for(j=0;j<5;j++){
+		document.write("<tr>");
+		for(i=0; i<6; i++) {
+			  
+			  document.write("<td><input type='button' value = '그림'></td>");
+			 
+		 
+		  }
+		document.write("</tr>");
+	}
+  document.write("</table>");
+  document.write("</div>");
+  document.write("</br>")
+  
+</script>
+
+<script language="JavaScript">
+	document.write("<div id = 'costtable'>")
+	document.write("<textarea rows='20' cols='40'></textarea>");
+  document.write("</div>");
+  document.write("</br>")
+  
+</script>
+
+
+
+<script language="JavaScript">
+	document.write("<div id = 'money'>")
+	document.write("<textarea rows='3' cols='20' value = '총가격 : '></textarea>");
+  document.write("</div>");
+  document.write("</br>")
+  
+</script>
+
+<script language="JavaScript">
+	document.write("<div id = 'bcost'>")
+	document.write("<input type='button' value = 'Pay'/>");
+	document.write("<input type='button' value = 'Return'/>");
+  document.write("</div>");
+  document.write("</br>")
+  
+</script>
+
+<script language="JavaScript">
+	document.write("<div id = 'lpage'>")
+	document.write("<input type='button' value = '<'/>");
+	document.write("<input type='label' value = '1/1'/>");
+	document.write("<input type='button' value = '>'/>");
+  document.write("</div>");
+  document.write("</br>")
+  
+</script>
+
+<script language="JavaScript">
+	document.write("<div id = 'lpage'>")
+	document.write("<input type='button' value = '<'/>");
+	document.write("<input type='label' value = '1/1'/>");
+	document.write("<input type='button' value = '>'/>");
+  document.write("</div>");
+  document.write("</br>")
+  
+</script>
+
+
+
+</head>
+<body>
+	
+	
+	
+</body>
+</html>

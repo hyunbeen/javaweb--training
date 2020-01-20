@@ -1,0 +1,51 @@
+package second.mongodb.model;
+
+
+
+import org.bson.types.ObjectId;
+
+import second.mongodb.domain.entity.Member;
+
+import com.mongodb.BasicDBObject;
+import com.mongodb.Cursor;
+import com.mongodb.DB;
+import com.mongodb.DBCollection;
+import com.mongodb.DBObject;
+
+public class MemberDao {
+	private static final  String   memberCollectionName = "members";
+
+	public MemberDao(){}
+	
+	public String create(Member member) {
+
+		return null;
+	}
+	
+	public void findAll(){
+		
+	}
+	
+	public void  findById( String id){
+
+	}
+	
+	public void update(Member member){
+
+	}
+	
+	public void delete(String id){
+
+	}
+		
+	//--------------------------------------------------------------------------
+	private BasicDBObject createDocument(Member member) {
+		
+		BasicDBObject doc = new BasicDBObject(); 
+		doc.put("name", member.getName());
+		doc.put("age", member.getAge());
+		
+		// 
+		return doc;
+	}
+}

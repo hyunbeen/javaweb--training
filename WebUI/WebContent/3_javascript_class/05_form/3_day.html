@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title> 폼 예제 3 </title>
+<style type = "text/css">
+#day{
+float : left;
+}
+#year{
+float : left;
+}
+</style>
+
+<script type="text/javascript">
+window.onload = function(){
+	
+	var btn = document.getElementById('cal');
+	cal.onclick = btn_click;
+	function btn_click(){
+		var Year = document.body.y.value;
+		var Month = document.body.m.value;
+		var Day = document.body.d.value;
+		var w = new Date();
+		w.setFullYear(Year);
+		w.setMonth(Month-1);
+		w.setDate(Day);
+		var yoil;
+		switch(w.getDay()){
+		case 0 : yoil = '일';break;
+		case 1 : yoil = '월';break;
+		case 2 : yoil = '화';break;
+		case 3 : yoil = '수';break;
+		case 4 : yoil = '목';break;
+		case 5 : yoil = '금';break;
+		case 6 : yoil = '토';break;
+		}
+		document.body.w.value = yoil;
+	}
+}
+</script>
+<script type="text/javascript">
+
+	
+	var btn1 = document.getElementById('y');
+	var btn2 = document.getElementById('m');
+	btn1.onchange = btn_click;
+	btn2.onchange = btn_click;
+	function btn_click(){
+		var day1 = document.getElementById('day');
+		document.body.removeChild(day1);
+		var y = btn1.value;
+		var m = btn2.value;
+		var date;
+		switch(m){
+		case 1: date = 31; break;
+		case 2: if((( y % 4 ==0 &&  y % 100 !=0 )|| y % 400 ==0)){
+				date=29;
+				}else{
+					date=28;
+				}break;
+		case 3: date = 31; break;
+		case 4: date = 30; break;
+		case 5: date = 31; break;
+		case 6: date = 30; break;
+		case 7: date = 31; break;
+		case 8: date = 31; break;
+		case 9: date = 30; break;
+		case 10: date = 31; break;
+		case 11: date = 30; break;
+		case 12: date = 31; break;
+		}
+		
+		
+		
+		document.write("<div id ='day'>");
+		document.write("<select name='d'>");
+		document.write("<option selected> 1 </option>");
+		for(var i=2;i<=date;i++)
+		{ 
+			document.write("<option>" +i+ "</option> ");
+		}
+		document.write("</select>");
+		document.write('<input type="button" value="☞" id ="cal" >');
+		document.write('<input type="text" name="w" size=4>요일입니다.');
+		document.write("</div>")
+		
+	}
+}
+</script>
+</head>
+<body>
+
+<hr><hr>
+요일을 알아봅시다. 
+<br>
+
+
+	
+	<div id='year'>
+	<select name="y" id="y"  >
+	<option selected> 2012 </option>
+	<option> 2013 </option>
+	<option> 2014 </option>
+	<option> 2015 </option>
+	<option> 2016 </option>
+	<option> 2017 </option>
+	<option> 2018 </option>
+	<option> 2019 </option>
+	<option> 2020 </option>
+	<option> 2021 </option>
+	<option> 2022 </option>
+	</select>년
+	
+	<select name="m" id="m" >
+	<option selected> 1 </option>
+	<option> 2 </option>
+	<option> 3 </option>
+	<option> 4 </option>
+	<option> 5 </option>
+	<option> 6 </option>
+	<option> 7 </option>
+	<option> 8 </option>
+	<option> 9 </option>
+	<option> 10 </option>
+	<option> 11 </option>
+	<option> 12 </option>
+	</select>월
+	
+	</div>
+	<script type="text/javascript">
+		document.write("<div id ='day'>");
+		document.write("<select name='d'>");
+		document.write("<option selected> 1 </option>");
+		for(var i=2;i<=31;i++)
+		{ 
+			document.write("<option>" +i+ "</option> ");
+		}
+		document.write("</select>");
+		document.write('<input type="button" value="☞" id ="cal" >');
+		document.write('<input type="text" name="w" size=4>요일입니다.');
+		document.write("</div>")
+		
+	</script>
+
+
+
+</body>
+</html>

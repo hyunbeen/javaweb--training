@@ -1,0 +1,35 @@
+<!DOCTYPE html> 
+<html> 
+	<head>
+		<title>jQuery Mobile</title>
+		<meta charset="euc-kr"/> 	
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+		
+		<link rel="shortcut icon" href="../image/icon.png">
+		<link rel="apple-touch-icon" href="../image/icon.png"> 
+		
+		<link rel="stylesheet" href="../jQueryLibs/jquery.mobile-1.4.2.css" />
+		<script src="../jQueryLibs/jquery-1.11.0.min.js"></script>
+		<script src="../jQueryLibs/jquery.mobile-1.4.2.min.js"></script>
+	</head> 
+
+	<body>
+		<div data-role="page">
+			<div data-role="header">
+				<h3>상단</h3>
+			</div>
+			<div data-role="content">중앙	</div>
+
+			<div data-role="footer" data-position="fixed" class="ui-bar">
+				<!--   class="ui-bar"  : 버튼사이의 여백을 위해 -->
+				<div data-role="controlgroup" data-type="horizontal">
+					<a href="#" data-role="button" data-icon="delete">삭제</a>
+					<a href="#" data-role="button" data-icon="plus">추가</a>
+					<a href="#" data-role="button" data-icon="arrow-u">위</a>
+					<a href="#" data-role="button" data-icon="arrow-d">아래</a>
+				</div>
+			</div> 
+		</div>
+	</body>
+</html>
+

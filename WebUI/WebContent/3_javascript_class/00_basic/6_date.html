@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+//	var d = new Date('2017/09/10');
+
+var d = new Date();
+//setter 이용해서 2017년 9월 30일 설정
+
+d.setFullYear(2017);
+d.setMonth(8);
+d.setDate(30);
+
+document.write(d.getFullYear()+"</br>")//중요
+document.write(d.getMonth()+"</br>")
+document.write(d.getDate()+"</br>")
+document.write(d.getDay()+"</br>")
+document.write(d.toLocaleString()+"</br>")
+
+d.setMonth(d.getMonth()-3);
+document.write(d+"<br/>");
+//	d.setDate(d.getDate+10);
+//	document.write(d+"<br/>");
+
+d.setDate(0);//전달의 마지막 날을 리턴
+document.write(d+"<br/>");
+
+</script>
+</head>
+
+<body>
+
+</body>
+</html>

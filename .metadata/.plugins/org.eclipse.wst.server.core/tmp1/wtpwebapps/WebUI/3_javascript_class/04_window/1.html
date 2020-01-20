@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+window.onload = function(){
+	var w = window.open('2.html','','width=240,height=120');
+	var ch = document.frm.choose;
+	ch.onchange = moveA;
+	function moveA(){
+		
+		
+		w.document.frm.txt.value = document.frm.choose.value;
+	}
+	
+}
+</script>
+</head>
+<body>
+<form name="frm">
+<input name="txt" type="text" value='없음'/>
+<select id='choose' name='choose'>
+
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="mercedes">Mercedes</option>
+  <option value="audi">Audi</option>
+ </select>
+ <form>
+ 
+</body>
+</html>

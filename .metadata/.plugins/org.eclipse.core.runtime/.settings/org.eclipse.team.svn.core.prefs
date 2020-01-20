@@ -1,0 +1,5 @@
+eclipse.preferences.version=1
+externalMigrateFromAuthorizationDatabase/isMigrated=true
+migrateFromAuthorizationDatabase/isMigrated=true
+repositories/6003c3c3cba100171fe2ec324ef3b217=6003c3c3cba100171fe2ec324ef3b217;https\://192.168.0.156/svn/6team;https\://192.168.0.156/svn/6team;branches;tags;trunk;true;214edb6a-039b-1742-b9e5-ad555651a645;https\://192.168.0.156/svn/6team;;false;;;0
+repositories/90261ec5cba100171fe2ec324ef3b217=90261ec5cba100171fe2ec324ef3b217;https\://192.168.0.104/svn/test_svn/firstproject;https\://192.168.0.104/svn/test_svn/firstproject;branches;tags;trunk;true;e279ca56-ed74-4f42-b1b1-9d4cab04c5ee;https\://192.168.0.104/svn/test_svn;;false;;;0

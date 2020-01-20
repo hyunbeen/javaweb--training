@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+
+// function add(a){
+	
+// }
+// add(3);
+
+function add(a,b,callbackFunc){
+	var result = a+b;
+	callbackFunc(result);
+	
+	
+	return function(){ return a+"+"+b+"="+result; };
+}
+var returnVal = add(10,20,function(result){
+	document.write('결과:'+result);
+});
+document.write('최종리턴:'+returnVal());
+
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

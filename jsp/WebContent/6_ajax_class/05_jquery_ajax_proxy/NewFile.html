@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="js/jquery-1.11.1.js" type="text/javascript"></script>
+<script type = "text/javascript">
+$(function(){
+	$('#time').click(function(){
+		//jquery의 ajax 문법
+// 		$.ajax({
+// 			url : './jsp/time.jsp',
+// 			type : 'get',//생략시 IE : get,chrome : post
+// 			success : function(data){
+// 				$('#result').html(data);
+// 			}
+// 		});
+		$.get("./jsp/time.jsp",function(data){
+			$('#result').html(data);
+		});
+	});
+
+	$('#naver').click(function(){
+		$.ajax({
+			type : 'get',
+			url : './jsp/proxy_naver.jsp',
+			success : function(data){
+				var realTime = $('.PM_CL_realtimeKeyword_rolling',data);
+				$('#result').empty();
+				$('#result').append(realTime);
+			}
+		});
+	});
+	
+	$('#melon').click(function(){
+		$.ajax({
+			type : 'get',
+			url : './jsp/proxy_melon.jsp',
+			success : function(data){
+				var realTime = $('.rank_cntt>.rank_info>p>a',data);
+				$('#result').empty();
+				$('#result').append(realTime);
+			}
+		});
+	});
+	
+	$('#daum').click(function(){
+		$.ajax({
+			type : 'get',
+			url : './jsp/proxy_daum.jsp',
+			success : function(data){
+				var realTime = $('#liveIssueTitle',data);
+				var realTime2 = $('.hotissue_mini',data);
+				$('#result').empty();
+				$('#result').append(realTime);
+				$('#result').append('<br/>');
+				$('#result').append(realTime2);
+			}
+		});
+	});
+});
+</script>
+</head>
+<body>
+	<button id='time'>시간</button>
+	<button id='naver'>네이버</button>
+	<button id='melon'>멜론</button>
+	<button id='daum'>다음</button>
+	<hr/>
+	<div id='result'></div>
+</body>
+</html>

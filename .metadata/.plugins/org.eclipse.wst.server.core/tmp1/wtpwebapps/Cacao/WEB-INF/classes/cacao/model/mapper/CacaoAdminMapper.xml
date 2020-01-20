@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper     
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"     
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">  
+
+<mapper namespace="mapper.CacaoAdminMapper">    
+
+<select id="selectAdminLogin" parameterType="hashmap" resultType="int">
+select count(*) cnt 
+from member 
+where m_email=#{mEmail} and m_pwd=#{mPwd} and m_check='T'
+</select>
+
+<select id="answerList" parameterType="hashmap" resultType="qa">
+select q_id, m_email, q_cate, q_title, q_content, q_status, q_answer 
+from qa 
+order by q_status, q_id desc
+</select>
+
+<update id="answerTextList" parameterType="qa">
+UPDATE QA 
+SET q_status=#{qStatus}, q_answer=#{qAnswer} 
+WHERE q_id=#{qId}
+</update>
+<select id="selectService" parameterType="hashmap" resultType="service">
+select * 
+from service 
+order by s_id desc
+</select>
+<insert id="serviceInsert" parameterType="service">
+insert into 
+service(s_id, s_kind, s_cate, s_date, s_title, s_detail) 
+values(SEQ_SERVICE_ID.NEXTVAL, #{sKind}, #{sCate}, sysdate, #{sTitle}, #{sDetail})
+</insert>
+<update id="serviceModify" parameterType="service">
+update service 
+set s_kind=#{sKind}, s_cate=#{sCate}, s_title=#{sTitle}, s_detail=#{sDetail} 
+where s_id=#{sId}
+</update>
+<select id="selectOrder" parameterType="hashmap" resultType="order">
+select * from deliver order by d_cancel ASC, d_id DESC
+</select>
+<update id="orderModify" parameterType="order">
+update deliver 
+set d_status=#{dStatus} 
+where d_id=#{dId}
+</update>
+<update id="orderModify1" parameterType="order">
+update deliver 
+set d_status=#{dStatus}, d_cancel='T' 
+where d_id=#{dId}
+</update>
+
+
+<select id="infolist" resultType="info">
+select *
+from info  
+order by i_id
+</select>
+<insert id="infoInsert" parameterType="info">
+insert into 
+info(i_id,i_char,i_cate,i_name,i_cost,i_cnt,i_color,i_kor,i_imgcnt,i_detail) 
+values(#{iId},#{iChar},#{iCate}, #{iName},#{iCost},#{iCnt},#{iColor},#{iKor},#{iImgcnt},'None')
+</insert>
+<update id="infoModify" parameterType="info">
+update info 
+set i_char=#{iChar},i_cate=#{iCate},i_name=#{iName},i_cost=#{iCost},i_cnt=#{iCnt},i_color=#{iColor},i_kor=#{iKor},i_imgcnt=#{iImgcnt}
+where i_id=#{iId}
+</update>
+
+
+</mapper> 
+ 
+ 
+ 
+ 
+ 

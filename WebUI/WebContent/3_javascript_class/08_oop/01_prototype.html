@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title> Javascript 객체지향 </title>
+<script type="text/javascript">
+	//0.객체선언
+	//var obj = {};
+// 	var obj = new Object();
+// 	obj.name = '홍길동';
+// 	obj.age = 25;
+
+	//1.클래스 선언 : 변수명을 대문자로 시작
+	var Student = function(name,kor,eng,math){
+		this.name = name;
+		this.kor = kor;
+		this.eng = eng;
+		this.math = math;
+// 		this.sum = function(){
+// 			return kor + eng + math;
+// 		}
+	}
+	
+// 	Student.prototype.sum = function(){
+// 		return this.kor + this.eng + this.math
+// 	}
+// 	Student.prototype.showInfo = function(){
+// 		document.write(this.name + "/"+this.kor+"확인");
+// 	} //동적으로 추가할때는 this붙이기
+	
+	var s1 = new Student('홍길동',99,66,77);
+	document.write(s1.name + "/"+s1.sum());
+	
+	
+		s1.showInfo();
+		
+		var s2 = new Student('홍길자',22,33,44);
+		document.write(s2.name+"/"+s2.sum());
+		s2.showInfo();
+	}
+	
+	Student.prototype = {
+			sum : function(){
+				return this.kor + this.eng + this.math;
+			},
+			
+			showInfo : function(){
+				document.write(this.name + "/"+this.kor+"확인");
+			}
+			
+	}
+	
+	
+</script>
+</head>
+<body>
+<script>
+
+</script>
+</body>
+</html>

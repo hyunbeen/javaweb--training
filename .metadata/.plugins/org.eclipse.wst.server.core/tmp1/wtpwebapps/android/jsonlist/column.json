@@ -1,0 +1,66 @@
+{
+"column" :{
+	"item" : [
+	  {
+		"num" : "001",
+		"img" : "http://192.168.0.121:8080/android/jsonlist/images/flower01.png",
+		"subject" : "고구마꽃",
+		"content" : "행운"
+	  },	
+	  {
+		"num" : "002",
+		"img" : "http://192.168.0.121:8080/android/jsonlist/images/flower02.png",
+		"subject" : "국화꽃",
+		"content" : "성실, 청초, 고상함 ,사랑, 순결, 질투"
+	  },
+	  {
+		"num" : "003",
+		"img" : "http://192.168.0.121:8080/android/jsonlist/images/flower03.png",
+		"subject" : "대나무꽃",
+		"content" : "지조, 인내, 절개, 절정"
+	  },	
+	  {
+		"num" : "004",
+		"img" : "http://192.168.0.121:8080/android/jsonlist/images/flower04.png",
+		"subject" : "동자꽃",
+		"content" : "기다림"
+	  },	
+	  {
+		"num" : "005",
+		"img" : "http://192.168.0.121:8080/android/jsonlist/images/flower05.png",
+		"subject" : "백합꽃",
+		"content" : "열정, 깨끗함, 명랑한 사랑, 유쾌, 사랑의 맹세, 순수한 사랑, 순결"
+	  },
+	  {
+		"num" : "006",
+		"img" : "http://192.168.0.121:8080/android/jsonlist/images/flower06.png",
+		"subject" : "소나무꽃",
+		"content" : "불로장수, 불로장생, 용감"
+	  },	
+	  {
+		"num" : "007",
+		"img" : "http://192.168.0.121:8080/android/jsonlist/images/flower07.png",
+		"subject" : "솔체꽃",
+		"content" : "이루어 질 수없는 사랑"
+	  },	
+	  {
+		"num" : "008",
+		"img" : "http://192.168.0.121:8080/android/jsonlist/images/flower08.png",
+		"subject" : "양귀비꽃",
+		"content" : "위로, 망각"
+	  },	
+	  {
+		"num" : "009",
+		"img" : "http://192.168.0.121:8080/android/jsonlist/images/flower09.png",
+		"subject" : "은방울꽃",
+		"content" : "섬세함"
+	  },
+	  {
+		"num" : "010",
+		"img" : "http://192.168.0.121:8080/android/jsonlist/images/flower10.png",
+		"subject" : "장미",
+		"content" : "질투, 완벽한 성취, 순결, 순진, 매력, 욕망, 열정, 기쁨,  기적, 맹세, 행복한 사랑"
+	  }
+	]	
+  }
+}

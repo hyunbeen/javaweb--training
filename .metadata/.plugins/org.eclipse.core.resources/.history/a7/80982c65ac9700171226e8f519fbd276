@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+
+body{
+height : 500px;
+width : 700px;
+}
+
+#bcategory{
+clear : both;
+float: top;
+margin-left : 100px;
+margin-right : 100px;
+}
+
+#menutbl{
+	clear:void;
+	float : left;
+}
+
+#costall{
+	float : right;
+}
+
+#lpage{
+	float : right;
+}
+
+
+</style>
+
+<script language="JavaScript">
+	document.write("<div id = 'bcategory'>")
+	document.write("<table>");
+	
+		document.write("<tr>");
+		for(i=0; i<6; i++) {
+			  
+			  document.write("<td><input type='button' value = '관리메뉴'></td>");
+			 
+		 
+		  }
+		document.write("</tr>");
+	
+  document.write("</table>");
+  document.write("</div>");
+  document.write("</br>")
+  
+</script>
+
+<script language="JavaScript">
+	document.write("<div id = 'menutbl'>")
+	document.write("<table>");
+	for(j=0;j<5;j++){
+		document.write("<tr>");
+		for(i=0; i<6; i++) {
+			  
+			  document.write("<td><input type='button' width : 30pt height : 20pt value = '그림'></td>");
+			 
+		 
+		  }
+		document.write("</tr>");
+	}
+  document.write("</table>");
+  document.write("</div>");
+  
+</script>
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+	
+	
+	<div id = 'costall'>
+	<div id = 'costtable'>
+	<textarea rows='20' cols='40'></textarea>
+    </div>
+   	</br>
+  	
+  	
+  	<div id = 'money'>
+	<textarea rows='3' cols='20' value = '총가격 : '></textarea>
+    </div>
+	</div>	
+	</br>
+	
+	
+	<div id = 'lpage'>
+	<input type='button' value = '<'/>
+	<input type='label' value = '1/1'/>
+	<input type='button' value = '>'/>
+    </div>
+     </br>
+	
+	
+	<div id = 'bcost'>
+	<input type='button' value = 'Pay'/>
+	<input type='button' value = 'Return'/>
+    </div>
+    </br>
+
+	
+  
+
+	
+</body>
+</html>

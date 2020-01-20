@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script language="JavaScript">
+	document.write("<div id = 'menutbl'>")
+	document.write("<table>");
+	for(j=0;j<5;j++){
+		document.write("<tr>");
+		for(i=0; i<6; i++) {
+			  
+			  document.write("<td><input type='button' value = '그림'></td>");
+			 
+		 
+		  }
+		document.write("</tr>");
+	}
+  document.write("</table>");
+  document.write("</div>");
+  document.write("</br>")
+  
+</script>
+
+<script language="JavaScript">
+	document.write("<div id = 'costtable'>")
+	document.write("<textarea rows='20' cols='40'></textarea>");
+  document.write("</div>");
+  document.write("</br>")
+  
+</script>
+
+<script language="JavaScript">
+	document.write("<div id = 'bcategory'>")
+	document.write("<table>");
+	
+		document.write("<tr>");
+		for(i=0; i<6; i++) {
+			  
+			  document.write("<td><input type='button' value = '관리메뉴'></td>");
+			 
+		 
+		  }
+		document.write("</tr>");
+	
+  document.write("</table>");
+  document.write("</div>");
+  document.write("</br>")
+  
+</script>
+
+<script language="JavaScript">
+	document.write("<div id = 'money'>")
+	document.write("<textarea rows='20' cols='30'></textarea>");
+  document.write("</div>");
+  document.write("</br>")
+  
+</script>
+
+
+</head>
+<body>
+	
+	
+	
+</body>
+</html>

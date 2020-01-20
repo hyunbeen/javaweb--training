@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css"> 
+	#here{
+		backgrond : #AABB33;
+		position : absolute;
+		teop:0;left:0;
+		 
+	}
+</style>
+<script type="text/javascript" src='../lib/jquery-3.1.1.js'></script> 
+<script type="text/javascript">
+	$(function(){
+		var h = $('#here');
+		h.click(function(){
+			h.text('클릭하면 내용이 바뀐다');
+		});
+	
+		h.mouseenter(function(){
+			h.text('<b>마우스가 들어가면 내용이 바뀐다2</b>');
+		}).mouseout(function(){
+		h.html('<b>마우스가 나오면 내용이 바뀐다3</b>');
+		});
+		
+		h.hover(function(){
+			h.css('border','3px solid green')
+		},
+		function(){
+			h.css('border','3px dashed red')
+		});
+// 		h.hide(); h.show();
+// 		h.fadeOut(1000).fadeIn();
+// 		h.slideUp().slideDown();
+		h.animate({top:200,left:400});
+	});
+	
+	$(document).ready(function(){
+		var s = $('#student');
+		var n = s.find('#name');
+		n.css({border:"3px dotted #aaff00" , background : "#aaff00"}); //배경색도 지정하려면
+	});
+</script>
+</head>
+<body>
+<div id='here'>아자아자 제이쿼리!!!!!</div>
+</hr>
+<div id='student'>
+	<div id='name'>홍길자</div>
+	<div id='age'>25</div>
+</div>
+</body>
+</html>

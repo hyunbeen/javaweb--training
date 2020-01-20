@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>jQuery Mobile</title>
+<meta charset="EUC-KR">
+
+<!--  0. 뷰포트설정( 확대축소방지) 와 바로가기 아이콘 지정 -->
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+<link rel="shortcut icon" href="../image/icon.png">
+<link rel="apple-touch-icon" href="../image/icon.png">
+
+<!-- 1. CND 서버에서 프레임워크 로딩 -->
+<!-- http://jquerymobile.com에서 download 후 Copy-and-Paste Snippet for CDN-hosted files (recommended) 에서 복사 -->
+<!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> -->
+
+<!--  2. WEB APP 로컬에서 프레임워크 로딩 -->
+<link rel="stylesheet" href="../jQueryLibs/jquery.mobile-1.4.5.css" />
+<script src="../jQueryLibs/jquery-1.11.0.min.js"></script>
+<script src="../jQueryLibs/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+	<!-- HTML5의 사용자 정의 속성은 'data-'로 시작하고 그 뒤에는 키값으로 지정
+			ex) data-role="page"   role:key, page:value
+	 -->
+<div data-role='page'>
+	<div data-role='header'>
+		<h1>머리말</h1>
+	</div>
+<!-- content	필수 -->
+	<div data-role='content'>
+		<h1>내용</h1>
+		<h1>내용</h1>
+		<h1>내용</h1>
+		<h1>내용</h1>
+		<h1>내용</h1>
+		<h1>내용</h1>
+		<h1>내용</h1>
+	</div>
+	<div data-role='footer' data-position='fixed'>
+		<h1>꼬리말</h1>
+	</div>
+	
+</div>
+</body>
+</html>

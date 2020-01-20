@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper     
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"     
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">  
+
+<mapper namespace="mapper.CacaoRegisterMapper">    
+
+<!-- <select id="getGroupId" parameterType="hashmap" resultType="comment"> -->
+   
+<!-- select  -->
+<!-- seq_group_id_article.nextval seq_group_id   -->
+<!-- from  -->
+<!-- dual   -->
+
+<!-- </select> -->
+
+<insert id="insertMember" parameterType="member">
+Insert 
+Into member(m_email,m_name, m_check, m_pwd, m_birth, m_sex)
+Values(  #{mEmail}, #{mName}, #{mCheck} , #{mPwd}, #{mBirth}, #{mSex})
+</insert>  
+<select id="idCheck" parameterType="hashmap" resultType="int">
+select count(*) from member where m_email=#{id}
+</select>
+
+
+<!-- <update id="update" parameterType="hashmap"> -->
+<!-- 	Update comment_tab Set user_id = #{UserId},comment_content = #{CommentContent},reg_date = sysdate   -->
+<!-- 	Where comment_no = #{cId} -->
+<!-- </update> -->
+
+
+</mapper> 
+ 

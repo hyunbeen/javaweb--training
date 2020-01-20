@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper     
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"     
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">  
+
+<mapper namespace="mapper.CacaoOrderMapper">    
+
+<select id="orderList" parameterType="hashmap" resultType="info">
+select info.i_id i_id, info.i_name i_name, info.i_cost i_cost 
+from info
+where info.i_id = #{id}
+</select>
+
+<select id="orderNextval" resultType="String">
+select to_char(sysdate,'YYYYMMDD')||seq_deliver_id.nextval from dual
+</select>
+
+<insert id="orderInsert" parameterType="order">
+insert into deliver(d_id, d_pay, d_name, d_addr, d_note, d_tel)
+values (#{oStr},#{oPayment},#{oName},#{oAddr},#{oMemo},#{oTel})
+</insert>
+
+<insert id="itemInsert" parameterType="deliver">
+insert into orderlist(o_id, d_id, m_email,i_id,o_cnt)
+values (seq_orderlist_id.nextval,#{olDid},#{olEmail},#{olIid},#{olOcnt})
+</insert>
+
+<select id="findEmail" parameterType="order" resultType="int">
+select count(*) cnt from member where m_email = #{mEmail}
+</select>
+<insert id="insertEmail" parameterType="order">
+insert into member(M_EMAIL,M_NAME,M_CHECK)
+values(#{mEmail},#{oName},'F')
+</insert>
+<select id="deliverList" parameterType="hashmap" resultType="deliver">
+select d_id ol_did,o.i_id ol_iid, i_char, i_cate, i_name, i_cost, o_cnt ol_ocnt
+from orderlist o join info i
+on o.i_id = i.i_id
+where d_id=#{dId}
+</select>
+
+</mapper> 
+ 

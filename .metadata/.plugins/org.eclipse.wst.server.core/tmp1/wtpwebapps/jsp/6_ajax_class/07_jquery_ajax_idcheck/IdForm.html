@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title> 아이디 중복 검사 </title>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('.check1').change(function(){
+		
+		var data = $('.check1').val();
+		if(data == '수원시'){
+			$.ajax({
+				type : 'get',
+				url : 'IdCheck.jsp',
+				data : { 'addr' : data},
+				dataType : 'text',
+				success : function(data){
+				
+					
+					var obj = {};
+					obj = eval("("+data+")");
+					var arr = obj.result;
+					$('.check2').find('option').remove().end();
+					;
+					for(var i=0;i<arr.length;i++){
+						$('.check2').append("<option>"+arr[i].pgu2+"</option>");
+					}
+					
+		
+				},
+				error : function(err){
+					alert('예외발생:' + err);
+				}
+			});
+		}else{
+			alert("수원시를 선택해 주십시오");
+		}
+		
+	});
+	
+$('.check2').change(function(){
+		
+		var data = $('.check2').val();
+		
+			$.ajax({
+				type : 'get',
+				url : 'IdCheck2.jsp',
+				data : { 'addr' : data},
+				dataType : 'text',
+				success : function(data){
+					
+					
+					var obj = {};
+					obj = eval("("+data+")");
+					var arr = obj.result;
+					$('.check3').find('option').remove().end();
+					
+					for(var i=0;i<arr.length;i++){
+						$('.check3').append("<option>"+arr[i].pgu3+"</option>");
+					}
+					
+		
+				},
+				error : function(err){
+					alert('예외발생:' + err);
+				}
+			});
+		});
+			$('#id_check').click(function(){
+				
+				var data = $('.check3').val();
+				$('#message').text(data);
+			
+			});
+		
+		
+		
+		
+	
+});
+</script>
+
+</head>
+<body>
+
+<select class="check1" size="1">
+<option>선택없음</option>
+<option >수원시</option>
+<option >서울시</option>
+<option>파주시</option>
+</select>
+<select class="check2" size="1">
+<option>선택없음</option>
+</select>
+<select class="check3" size="1">
+<option selected='true'>선택없음</option>
+</select>
+
+<button type="button" id="id_check">선택</button><br/><br/>
+<div id="message"></div>
+
+</body>
+</html>

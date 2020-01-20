@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	var i;
+	for(i=0;i<6;i++){
+		<tr>
+	<td><input type = 'submit' value = '주문1'/> </td>
+	<td><input type = 'submit' value = '주문1'/> </td>
+	<td><input type = 'submit' value = '주문1'/> </td>
+	<td><input type = 'submit' value = '주문1'/> </td>
+	<td><input type = 'submit' value = '주문1'/> </td>
+	<td><input type = 'submit' value = '주문1'/> </td>	
+	</tr>
+	}
+	
+	
+</body>
+</html>

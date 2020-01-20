@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+	
+	
+	function walk(data,f){
+		for(var key in data){
+			f(key,data[key]);
+		}
+	}
+	
+	var arr = [1,2,3,4,5];
+	document.write(walk(arr,function (key,value){
+		document.write(key + ":" + value + '<br/>');
+	}));
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

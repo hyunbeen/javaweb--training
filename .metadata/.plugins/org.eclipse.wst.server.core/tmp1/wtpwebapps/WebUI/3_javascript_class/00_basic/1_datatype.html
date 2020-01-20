@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+var byensu = "문자열";
+document.writeln("변수의 값: "+byensu +"</br>" );
+byensu = 10;
+document.writeln("변수의 값: "+byensu );
+//[참고] 기본형이 자동으로 참조형이 되기도 함
+byensu = 100.5;
+document.writeln("변수의 값: "+byensu.toString()+"</br>");
+
+//리터럴 : 데이터의 값
+var arr = ['안녕',["Hello",'Hola'],"곤니찌와"];
+document.writeln(arr[1][0]+"<br/>");
+
+var obj = {x : '안녕' , y : 'hello' , z:'곤니찌와'};
+document.writeln(obj.x+"<br/>");
+document.writeln(obj['y']+"<br/>");
+
+var x;
+document.writeln(x+"<br/>");
+document.writeln(obj.a+"<br/>");
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

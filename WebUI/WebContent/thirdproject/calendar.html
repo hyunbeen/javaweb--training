@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style type="text/css" id='style1'>
+
+td {
+	width: 50px;
+	height: 50px;
+	text-align: center;
+}
+
+tr td:first-child {
+	color: red;
+}
+
+tr td:last-child {
+	color: blue;
+}
+
+</style>
+
+<script type="text/javascript">
+	
+		var yoil = [ '일', '월', '화', '수', '목', '금', '토' ];
+		var dayday = [ '31', '28', '31', '30', '31', '30', '31', '31', '30',
+				'31', '30', '31' ];
+
+		var d = new Date();
+		d.setFullYear(d.getFullYear());
+		d.setMonth(d.getMonth());
+		d.setDate(1);
+
+		
+		
+		function calc(){
+		var getYear = d.getFullYear();
+		var getMonth = parseInt(d.getMonth());
+		var daystart = d.getDay();
+
+		var lastday = dayday[getMonth];
+
+		var imsi = 1;
+		document.write(lastday + " / " + getYear + " / " + getMonth + " / " + daystart);
+		document.write("<form>");
+		document.write("<table border='2'>");
+		document.write("<tr><td><input type='button' id='pre' value='이전'></td>");
+		document.write("<td  colspan='5'>" + getYear + "/" + (getMonth + 1)	+ "</td>");
+		document.write("<td><input type='button' id='next' value='다음'></td></tr>");
+		var chk = false;
+		for (var i = 0; i < 7; i++) {
+			document.write("<td>" + yoil[i]);
+			document.write("</td>");
+		}
+
+		for (var i = 0; i < 5; i++) {
+			document.write("<tr>");
+			for (var j = 0; j < 7; j++) {
+				document.write("<td>");
+				if (j == daystart)
+					chk = true;
+
+				if (chk == true && imsi <= lastday) {
+					document.write(imsi);
+					document.write("</td>");
+					imsi++;
+				}
+			}
+			document.write("</tr>");
+		}
+
+		document.write("</table>");
+		document.write("</form>");
+		
+		document.getElementById('pre').onclick = pre;
+		document.getElementById('next').onclick = next;
+
+		}
+		calc();
+		
+		function pre(){
+			document.close();
+			d.setMonth( d.getMonth() -1 );
+			
+			d.setFullYear(d.getFullYear());
+			d.setMonth(d.getMonth());
+			d.setDate(1);
+			calc();				
+		}
+		function next(){
+			document.close();
+			d.setMonth( d.getMonth() +1 );
+			
+			d.setFullYear(d.getFullYear());
+			d.setMonth(d.getMonth());
+			d.setDate(1);
+			calc();
+		}
+		
+</script>
+
+</head>
+<body>
+
+</body>
+</html>

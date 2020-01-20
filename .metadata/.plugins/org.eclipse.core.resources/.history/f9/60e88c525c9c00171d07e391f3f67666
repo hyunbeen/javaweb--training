@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<!-- 우리 웹서버에 접속해서 js 파일을 내려받음 -->
+<script type="text/javascript" src='../lib/jquery-3.1.1.js'></script> 
+<!-- CND 방식 -->
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+<script type="text/javascript">
+	//jQuery(function(){
+	//	$('img').hide();
+	//});
+// 		$(document).ready(function(){
+// 		$('.grim').hide();
+// 	});
+// $(function(){
+// 	$('.grim').hide();
+// })
+$(myfun1);
+function myfun1(){
+	alert('시작1');
+}
+$(myfun2);
+var myfun2 = function(){
+	alert('시작2');
+}
+$(function(){
+	alert('시작~~~~');
+})
+
+	
+</script>
+</head>
+<body>
+
+나의 이미지 : <img id='mygrim' class='grim' src='images/grim.jpg'/>
+
+</body>
+</html>

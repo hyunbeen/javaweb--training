@@ -1,0 +1,201 @@
+
+9월 12, 2017 14:13:32.29 NEW SESSION
+9월 12, 2017 14:13:32.29 [5860:13928:0912/141332.275:ERROR:service_manager_context.cc(174)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\60.0.3112.113\content_browser.service.exe
+9월 12, 2017 14:13:32.30 [5860:13928:0912/141332.275:ERROR:service_manager_context.cc(174)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\60.0.3112.113\content_browser.service.exe
+9월 12, 2017 14:13:32.30 [5860:13928:0912/141332.275:ERROR:service_manager_context.cc(174)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\60.0.3112.113\content_browser.service.exe
+9월 12, 2017 14:13:32.30 [5860:13928:0912/141332.275:ERROR:service_manager_context.cc(174)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\60.0.3112.113\content_browser.service.exe
+9월 12, 2017 14:13:32.32 [5860:13928:0912/141332.275:ERROR:service_manager_context.cc(174)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\60.0.3112.113\content_browser.service.exe
+9월 12, 2017 14:13:32.32 [5860:13928:0912/141332.275:ERROR:service_manager_context.cc(174)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\60.0.3112.113\content_browser.service.exe
+9월 12, 2017 14:13:32.32 [5860:13928:0912/141332.275:ERROR:service_manager_context.cc(174)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\60.0.3112.113\content_browser.service.exe
+9월 12, 2017 17:00:01.20 [10768:2920:0912/170001.209:ERROR:service_manager.cc(142)] Connection InterfaceProviderSpec prevented service: content_plugin from binding interface: memory_instrumentation::mojom::Coordinator exposed by: content_browser
+9월 12, 2017 17:19:12.76 [14272:3768:0912/171912.766:ERROR:service_manager.cc(142)] Connection InterfaceProviderSpec prevented service: content_plugin from binding interface: memory_instrumentation::mojom::Coordinator exposed by: content_browser
+9월 12, 2017 17:19:51.16 [6068:8640:0912/171951.169:ERROR:service_manager.cc(142)] Connection InterfaceProviderSpec prevented service: content_plugin from binding interface: memory_instrumentation::mojom::Coordinator exposed by: content_browser
+9월 12, 2017 17:20:35.38 [4792:13484:0912/172035.382:ERROR:service_manager.cc(142)] Connection InterfaceProviderSpec prevented service: content_plugin from binding interface: memory_instrumentation::mojom::Coordinator exposed by: content_browser
+9월 12, 2017 17:23:41.15 [2068:252:0912/172341.150:ERROR:service_manager.cc(142)] Connection InterfaceProviderSpec prevented service: content_plugin from binding interface: memory_instrumentation::mojom::Coordinator exposed by: content_browser
+9월 12, 2017 20:49:25.51 [15628:5092:0912/204925.519:ERROR:service_manager.cc(142)] Connection InterfaceProviderSpec prevented service: content_plugin from binding interface: memory_instrumentation::mojom::Coordinator exposed by: content_browser
+9월 12, 2017 20:50:29.91 [15628:5092:0912/205029.918:ERROR:service_manager.cc(142)] Connection InterfaceProviderSpec prevented service: content_plugin from binding interface: memory_instrumentation::mojom::Coordinator exposed by: content_browser
+
+9월 13, 2017 09:31:37.97 NEW SESSION
+9월 13, 2017 09:31:37.97 [5444:11908:0913/093137.969:ERROR:service_manager.cc(142)] Connection InterfaceProviderSpec prevented service: content_plugin from binding interface: memory_instrumentation::mojom::Coordinator exposed by: content_browser
+
+9월 14, 2017 10:27:00.31 NEW SESSION
+9월 14, 2017 10:27:00.31 [11284:4436:0914/102700.178:ERROR:service_manager.cc(142)] Connection InterfaceProviderSpec prevented service: content_plugin from binding interface: memory_instrumentation::mojom::Coordinator exposed by: content_browser
+9월 14, 2017 11:14:21.42 [11284:12260:0914/111421.429:ERROR:media_internals.cc(107)] Cannot get RenderProcessHost
+9월 14, 2017 12:29:08.77 [14544:5796:0914/122908.772:ERROR:service_manager.cc(142)] Connection InterfaceProviderSpec prevented service: content_plugin from binding interface: memory_instrumentation::mojom::Coordinator exposed by: content_browser
+9월 14, 2017 13:34:12.75 [14544:13924:0914/133412.759:ERROR:gcm_channel_status_request.cc(127)] GCM channel request failed.
+
+9월 14, 2017 18:10:40.05 NEW SESSION
+9월 14, 2017 18:10:40.05 [8828:9068:0914/181039.983:ERROR:cache_util_win.cc(20)] Unable to move the cache: 5
+9월 14, 2017 18:10:40.47 [8828:9068:0914/181039.983:ERROR:cache_util.cc(134)] Unable to move cache folder C:\Users\kosta\AppData\Local\Google\Chrome\User Data\ShaderCache\GPUCache to C:\Users\kosta\AppData\Local\Google\Chrome\User Data\ShaderCache\old_GPUCache_000
+9월 14, 2017 18:10:40.47 [8828:9068:0914/181039.983:ERROR:disk_cache.cc(132)] Unable to create cache
+9월 14, 2017 18:10:40.48 [8828:9068:0914/181039.983:ERROR:shader_disk_cache.cc(604)] Shader Cache Creation failed: -2
+9월 15, 2017 12:35:38.02 [3388:1052:0915/123538.027:ERROR:service_manager.cc(142)] Connection InterfaceProviderSpec prevented service: content_plugin from binding interface: memory_instrumentation::mojom::Coordinator exposed by: content_browser
+9월 15, 2017 15:54:03.99 [11096:944:0915/155403.998:ERROR:service_manager_context.cc(174)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\60.0.3112.113\content_browser.service.exe
+9월 15, 2017 15:54:04.01 [11096:944:0915/155403.998:ERROR:service_manager_context.cc(174)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\60.0.3112.113\content_browser.service.exe
+9월 15, 2017 15:54:04.01 [11096:944:0915/155403.998:ERROR:service_manager_context.cc(174)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\60.0.3112.113\content_browser.service.exe
+9월 15, 2017 15:54:04.03 [11096:944:0915/155403.998:ERROR:service_manager_context.cc(174)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\60.0.3112.113\content_browser.service.exe
+9월 15, 2017 15:54:04.03 [11096:944:0915/155403.998:ERROR:service_manager_context.cc(174)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\60.0.3112.113\content_browser.service.exe
+9월 15, 2017 15:54:04.04 [11096:944:0915/155403.998:ERROR:service_manager_context.cc(174)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\60.0.3112.113\content_browser.service.exe
+9월 15, 2017 15:54:04.04 [11096:944:0915/155403.998:ERROR:service_manager_context.cc(174)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\60.0.3112.113\content_browser.service.exe
+9월 15, 2017 17:52:29.61 [10624:6272:0915/175229.611:ERROR:service_manager_context.cc(174)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\60.0.3112.113\content_browser.service.exe
+9월 15, 2017 17:52:29.61 [10624:6272:0915/175229.611:ERROR:service_manager_context.cc(174)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\60.0.3112.113\content_browser.service.exe
+9월 15, 2017 17:52:29.61 [10624:6272:0915/175229.611:ERROR:service_manager_context.cc(174)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\60.0.3112.113\content_browser.service.exe
+9월 15, 2017 17:52:29.62 [10624:6272:0915/175229.611:ERROR:service_manager_context.cc(174)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\60.0.3112.113\content_browser.service.exe
+9월 15, 2017 17:52:29.64 [10624:6272:0915/175229.611:ERROR:service_manager_context.cc(174)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\60.0.3112.113\content_browser.service.exe
+9월 15, 2017 17:52:29.65 [10624:6272:0915/175229.611:ERROR:service_manager_context.cc(174)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\60.0.3112.113\content_browser.service.exe
+9월 15, 2017 17:52:29.65 [10624:6272:0915/175229.611:ERROR:service_manager_context.cc(174)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\60.0.3112.113\content_browser.service.exe
+
+9월 18, 2017 16:22:07.21 NEW SESSION
+9월 18, 2017 16:22:07.21 [14712:7412:0918/162207.201:ERROR:service_manager.cc(142)] Connection InterfaceProviderSpec prevented service: content_plugin from binding interface: memory_instrumentation::mojom::Coordinator exposed by: content_browser
+
+9월 19, 2017 14:37:24.19 NEW SESSION
+9월 19, 2017 14:37:24.19 [6416:8884:0919/143724.166:ERROR:service_manager_context.cc(171)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\61.0.3163.91\content_browser.service.exe
+9월 19, 2017 14:37:24.21 [6416:8884:0919/143724.182:ERROR:service_manager_context.cc(171)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\61.0.3163.91\content_browser.service.exe
+9월 19, 2017 14:37:24.21 [6416:8884:0919/143724.182:ERROR:service_manager_context.cc(171)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\61.0.3163.91\content_browser.service.exe
+9월 19, 2017 14:37:24.22 [6416:8884:0919/143724.182:ERROR:service_manager_context.cc(171)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\61.0.3163.91\content_browser.service.exe
+9월 19, 2017 14:37:24.22 [6416:8884:0919/143724.182:ERROR:service_manager_context.cc(171)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\61.0.3163.91\content_browser.service.exe
+9월 19, 2017 14:37:24.24 [6416:8884:0919/143724.182:ERROR:service_manager_context.cc(171)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\61.0.3163.91\content_browser.service.exe
+9월 19, 2017 14:37:24.24 [6416:8884:0919/143724.182:ERROR:service_manager_context.cc(171)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\61.0.3163.91\content_browser.service.exe
+9월 19, 2017 14:37:24.26 [6416:8884:0919/143724.182:ERROR:service_manager_context.cc(171)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\61.0.3163.91\content_browser.service.exe
+
+9월 19, 2017 17:36:51.51 NEW SESSION
+9월 19, 2017 17:36:51.51 [5744:9884:0919/173651.510:ERROR:cache_util_win.cc(20)] Unable to move the cache: 5
+9월 19, 2017 17:36:51.52 [5744:9884:0919/173651.511:ERROR:cache_util.cc(134)] Unable to move cache folder C:\Users\kosta\AppData\Local\Google\Chrome\User Data\ShaderCache\GPUCache to C:\Users\kosta\AppData\Local\Google\Chrome\User Data\ShaderCache\old_GPUCache_000
+9월 19, 2017 17:36:51.52 [5744:9884:0919/173651.511:ERROR:disk_cache.cc(132)] Unable to create cache
+9월 19, 2017 17:36:51.53 [5744:9884:0919/173651.511:ERROR:shader_disk_cache.cc(604)] Shader Cache Creation failed: -2
+9월 19, 2017 17:36:51.68 [5744:9884:0919/173651.681:ERROR:browser_gpu_channel_host_factory.cc(103)] Failed to launch GPU process.
+
+9월 20, 2017 09:59:24.53 NEW SESSION
+9월 20, 2017 09:59:24.53 [5988:2436:0920/095924.524:ERROR:shader_disk_cache.cc(237)] Failed to create shader cache entry: -2
+
+9월 21, 2017 21:17:09.40 NEW SESSION
+9월 21, 2017 21:17:09.40 [5264:2232:0921/211709.390:ERROR:service_manager_context.cc(171)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\61.0.3163.91\content_browser.service.exe
+9월 21, 2017 21:17:09.43 [5264:2232:0921/211709.390:ERROR:service_manager_context.cc(171)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\61.0.3163.91\content_browser.service.exe
+9월 21, 2017 21:17:09.45 [5264:2232:0921/211709.390:ERROR:service_manager_context.cc(171)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\61.0.3163.91\content_browser.service.exe
+9월 21, 2017 21:17:09.45 [5264:2232:0921/211709.390:ERROR:service_manager_context.cc(171)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\61.0.3163.91\content_browser.service.exe
+9월 21, 2017 21:17:09.45 [5264:2232:0921/211709.390:ERROR:service_manager_context.cc(171)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\61.0.3163.91\content_browser.service.exe
+9월 21, 2017 21:17:09.46 [5264:2232:0921/211709.390:ERROR:service_manager_context.cc(171)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\61.0.3163.91\content_browser.service.exe
+9월 21, 2017 21:17:09.46 [5264:2232:0921/211709.390:ERROR:service_manager_context.cc(171)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\61.0.3163.91\content_browser.service.exe
+
+9월 22, 2017 10:24:13.30 NEW SESSION
+9월 22, 2017 10:24:13.30 [10064:9068:0922/102413.295:ERROR:shader_disk_cache.cc(237)] Failed to create shader cache entry: -2
+9월 22, 2017 10:46:55.26 [10064:9068:0922/104655.266:ERROR:shader_disk_cache.cc(237)] Failed to create shader cache entry: -2
+9월 22, 2017 10:51:42.06 [10064:9068:0922/105142.062:ERROR:shader_disk_cache.cc(237)] Failed to create shader cache entry: -2
+9월 22, 2017 10:53:03.07 [10064:9068:0922/105303.070:ERROR:shader_disk_cache.cc(237)] Failed to create shader cache entry: -2
+9월 22, 2017 20:02:58.77 [8140:2812:0922/200258.773:ERROR:shader_disk_cache.cc(237)] Failed to create shader cache entry: -2
+9월 22, 2017 21:14:23.24 [12260:92:0922/211423.244:ERROR:service_manager_context.cc(171)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\61.0.3163.100\content_browser.service.exe
+9월 22, 2017 21:14:23.25 [12260:92:0922/211423.244:ERROR:service_manager_context.cc(171)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\61.0.3163.100\content_browser.service.exe
+9월 22, 2017 21:14:23.25 [12260:92:0922/211423.244:ERROR:service_manager_context.cc(171)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\61.0.3163.100\content_browser.service.exe
+9월 22, 2017 21:14:23.27 [12260:92:0922/211423.244:ERROR:service_manager_context.cc(171)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\61.0.3163.100\content_browser.service.exe
+9월 22, 2017 21:14:23.27 [12260:92:0922/211423.244:ERROR:service_manager_context.cc(171)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\61.0.3163.100\content_browser.service.exe
+9월 22, 2017 21:14:23.29 [12260:92:0922/211423.244:ERROR:service_manager_context.cc(171)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\61.0.3163.100\content_browser.service.exe
+9월 22, 2017 21:14:23.29 [12260:92:0922/211423.244:ERROR:service_manager_context.cc(171)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\61.0.3163.100\content_browser.service.exe
+9월 22, 2017 21:14:23.30 [12260:92:0922/211423.244:ERROR:service_manager_context.cc(171)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\61.0.3163.100\content_browser.service.exe
+9월 22, 2017 21:14:23.30 [12260:92:0922/211423.244:ERROR:service_manager_context.cc(171)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\61.0.3163.100\content_browser.service.exe
+9월 22, 2017 21:14:23.32 [12260:92:0922/211423.244:ERROR:service_manager_context.cc(171)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\61.0.3163.100\content_browser.service.exe
+9월 22, 2017 21:14:23.32 [12260:92:0922/211423.244:ERROR:service_manager_context.cc(171)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\61.0.3163.100\content_browser.service.exe
+9월 22, 2017 21:14:23.32 [12260:92:0922/211423.244:ERROR:service_manager_context.cc(171)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\61.0.3163.100\content_browser.service.exe
+9월 22, 2017 21:14:23.33 [12260:92:0922/211423.244:ERROR:service_manager_context.cc(171)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\61.0.3163.100\content_browser.service.exe
+9월 22, 2017 21:14:23.33 [12260:92:0922/211423.244:ERROR:service_manager_context.cc(171)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\61.0.3163.100\content_browser.service.exe
+
+9월 25, 2017 15:24:41.86 NEW SESSION
+9월 25, 2017 15:24:41.86 [4776:11256:0925/152441.851:ERROR:shader_disk_cache.cc(237)] Failed to create shader cache entry: -2
+9월 25, 2017 15:53:02.88 [11792:10988:0925/155302.884:ERROR:service_manager_context.cc(171)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\61.0.3163.100\content_browser.service.exe
+9월 25, 2017 15:53:02.88 [11792:10988:0925/155302.884:ERROR:service_manager_context.cc(171)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\61.0.3163.100\content_browser.service.exe
+9월 25, 2017 15:53:02.90 [11792:10988:0925/155302.884:ERROR:service_manager_context.cc(171)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\61.0.3163.100\content_browser.service.exe
+9월 25, 2017 15:53:02.90 [11792:10988:0925/155302.884:ERROR:service_manager_context.cc(171)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\61.0.3163.100\content_browser.service.exe
+9월 25, 2017 15:53:02.91 [11792:10988:0925/155302.884:ERROR:service_manager_context.cc(171)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\61.0.3163.100\content_browser.service.exe
+9월 25, 2017 15:53:02.91 [11792:10988:0925/155302.884:ERROR:service_manager_context.cc(171)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\61.0.3163.100\content_browser.service.exe
+9월 25, 2017 15:53:02.91 [11792:10988:0925/155302.884:ERROR:service_manager_context.cc(171)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\61.0.3163.100\content_browser.service.exe
+9월 25, 2017 19:05:42.93 [12600:13576:0925/190542.931:ERROR:ssl_client_socket_impl.cc(1129)] handshake failed; returned -1, SSL error code 1, net_error -101
+
+9월 26, 2017 15:26:38.11 NEW SESSION
+9월 26, 2017 15:26:38.12 [10028:2196:0926/152638.086:ERROR:ssl_client_socket_impl.cc(1129)] handshake failed; returned -1, SSL error code 1, net_error -101
+9월 26, 2017 15:26:38.15 [10028:2196:0926/152638.086:ERROR:ssl_client_socket_impl.cc(1129)] handshake failed; returned -1, SSL error code 1, net_error -101
+9월 26, 2017 15:26:38.16 [10028:2196:0926/152638.086:ERROR:ssl_client_socket_impl.cc(1129)] handshake failed; returned -1, SSL error code 1, net_error -101
+9월 26, 2017 15:26:38.17 [10028:2196:0926/152638.090:ERROR:ssl_client_socket_impl.cc(1129)] handshake failed; returned -1, SSL error code 1, net_error -101
+9월 26, 2017 15:26:38.19 [10028:2196:0926/152638.090:ERROR:ssl_client_socket_impl.cc(1129)] handshake failed; returned -1, SSL error code 1, net_error -101
+9월 26, 2017 15:26:38.19 [10028:2196:0926/152638.090:ERROR:ssl_client_socket_impl.cc(1129)] handshake failed; returned -1, SSL error code 1, net_error -101
+9월 26, 2017 15:26:45.75 [10028:2196:0926/152645.753:ERROR:ssl_client_socket_impl.cc(1129)] handshake failed; returned -1, SSL error code 1, net_error -101
+9월 26, 2017 15:29:42.42 [10028:2196:0926/152942.427:ERROR:ssl_client_socket_impl.cc(1129)] handshake failed; returned -1, SSL error code 1, net_error -101
+9월 26, 2017 15:29:42.45 [10028:2196:0926/152942.427:ERROR:ssl_client_socket_impl.cc(1129)] handshake failed; returned -1, SSL error code 1, net_error -101
+9월 26, 2017 15:29:42.46 [10028:2196:0926/152942.427:ERROR:ssl_client_socket_impl.cc(1129)] handshake failed; returned -1, SSL error code 1, net_error -101
+9월 26, 2017 15:29:42.47 [10028:2196:0926/152942.427:ERROR:ssl_client_socket_impl.cc(1129)] handshake failed; returned -1, SSL error code 1, net_error -101
+9월 26, 2017 15:29:42.48 [10028:2196:0926/152942.439:ERROR:ssl_client_socket_impl.cc(1129)] handshake failed; returned -1, SSL error code 1, net_error -101
+9월 26, 2017 15:29:42.49 [10028:2196:0926/152942.443:ERROR:ssl_client_socket_impl.cc(1129)] handshake failed; returned -1, SSL error code 1, net_error -101
+
+9월 29, 2017 13:19:57.98 NEW SESSION
+9월 29, 2017 13:19:57.98 [13284:15324:0929/131957.966:ERROR:gcm_channel_status_request.cc(127)] GCM channel request failed.
+9월 29, 2017 18:25:52.02 [7084:14804:0929/182552.022:ERROR:service_manager_context.cc(171)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\61.0.3163.100\content_browser.service.exe
+9월 29, 2017 13:28:10.73 [8992:10064:0929/132810.738:ERROR:gcm_channel_status_request.cc(127)] GCM channel request failed.
+
+10월 13, 2017 10:12:43.67 NEW SESSION
+10월 13, 2017 10:12:43.67 [14656:11528:1013/101243.669:ERROR:shader_disk_cache.cc(237)] Failed to create shader cache entry: -2
+10월 13, 2017 19:08:38.16 [10252:16668:1013/190838.167:ERROR:CONSOLE(1392)] "Uncaught (in promise) Error: Could not resolve node to reveal.", source: chrome-devtools://devtools/bundled/elements/elements_module.js (1392)
+10월 16, 2017 13:24:29.34 [6460:7356:1016/132429.346:ERROR:service_manager.cc(156)] Connection InterfaceProviderSpec prevented service: content_plugin from binding interface: memory_instrumentation::mojom::Coordinator exposed by: content_browser
+
+10월 16, 2017 17:53:36.46 NEW SESSION
+10월 16, 2017 17:53:36.46 [6100:4524:1016/175336.466:ERROR:service_manager.cc(156)] Connection InterfaceProviderSpec prevented service: content_plugin from binding interface: memory_instrumentation::mojom::Coordinator exposed by: content_browser
+10월 17, 2017 10:30:19.57 [2144:12784:1017/103019.571:ERROR:CONSOLE(400)] "Uncaught (in promise) TypeError: Cannot read property 'indexOf' of null", source: chrome-devtools://devtools/bundled/inspector.js (400)
+
+10월 18, 2017 16:13:53.92 NEW SESSION
+10월 18, 2017 16:13:53.92 [12424:10596:1018/161353.921:ERROR:CONSOLE(400)] "Uncaught (in promise) TypeError: Cannot read property 'indexOf' of null", source: chrome-devtools://devtools/bundled/inspector.js (400)
+10월 18, 2017 16:14:04.87 [12424:10596:1018/161404.878:ERROR:CONSOLE(400)] "Uncaught (in promise) TypeError: Cannot read property 'indexOf' of null", source: chrome-devtools://devtools/bundled/inspector.js (400)
+10월 18, 2017 17:53:43.91 [1800:5980:1018/175343.916:ERROR:CONSOLE(400)] "Uncaught (in promise) TypeError: Cannot read property 'indexOf' of null", source: chrome-devtools://devtools/bundled/inspector.js (400)
+10월 18, 2017 18:25:54.89 [7320:15320:1018/182554.894:ERROR:CONSOLE(400)] "Uncaught (in promise) TypeError: Cannot read property 'indexOf' of null", source: chrome-devtools://devtools/bundled/inspector.js (400)
+
+10월 19, 2017 10:28:23.91 NEW SESSION
+10월 19, 2017 10:28:23.91 [14256:15120:1019/102823.902:ERROR:shader_disk_cache.cc(237)] Failed to create shader cache entry: -2
+10월 19, 2017 10:28:43.54 [14256:15120:1019/102843.540:ERROR:shader_disk_cache.cc(237)] Failed to create shader cache entry: -2
+10월 19, 2017 11:18:51.09 [3740:16028:1019/111851.091:ERROR:audio_manager_base.cc(275)] Invalid audio output parameters received; using fake audio path. Channels: 0, Sample Rate: 0, Bits Per Sample: 0, Frames Per Buffer: 0
+10월 19, 2017 11:56:42.47 [16372:11068:1019/115642.471:ERROR:CONSOLE(400)] "Uncaught (in promise) TypeError: Cannot read property 'indexOf' of null", source: chrome-devtools://devtools/bundled/inspector.js (400)
+10월 19, 2017 11:56:42.84 [16372:11068:1019/115642.845:ERROR:CONSOLE(400)] "Uncaught (in promise) TypeError: Cannot read property 'indexOf' of null", source: chrome-devtools://devtools/bundled/inspector.js (400)
+10월 19, 2017 11:56:43.25 [16372:11068:1019/115643.251:ERROR:CONSOLE(400)] "Uncaught (in promise) TypeError: Cannot read property 'indexOf' of null", source: chrome-devtools://devtools/bundled/inspector.js (400)
+10월 19, 2017 11:56:43.33 [16372:11068:1019/115643.337:ERROR:CONSOLE(400)] "Uncaught (in promise) TypeError: Cannot read property 'indexOf' of null", source: chrome-devtools://devtools/bundled/inspector.js (400)
+10월 19, 2017 11:56:44.05 [16372:11068:1019/115644.050:ERROR:CONSOLE(400)] "Uncaught (in promise) TypeError: Cannot read property 'indexOf' of null", source: chrome-devtools://devtools/bundled/inspector.js (400)
+10월 19, 2017 11:56:44.24 [16372:11068:1019/115644.248:ERROR:CONSOLE(400)] "Uncaught (in promise) TypeError: Cannot read property 'indexOf' of null", source: chrome-devtools://devtools/bundled/inspector.js (400)
+10월 19, 2017 11:56:44.28 [16372:11068:1019/115644.287:ERROR:CONSOLE(400)] "Uncaught (in promise) TypeError: Cannot read property 'indexOf' of null", source: chrome-devtools://devtools/bundled/inspector.js (400)
+10월 19, 2017 11:56:44.30 [16372:11068:1019/115644.287:ERROR:CONSOLE(400)] "Uncaught (in promise) TypeError: Cannot read property 'indexOf' of null", source: chrome-devtools://devtools/bundled/inspector.js (400)
+10월 19, 2017 11:56:44.35 [16372:11068:1019/115644.355:ERROR:CONSOLE(400)] "Uncaught (in promise) TypeError: Cannot read property 'indexOf' of null", source: chrome-devtools://devtools/bundled/inspector.js (400)
+
+10월 19, 2017 14:04:12.54 NEW SESSION
+10월 19, 2017 14:04:12.54 [14960:16208:1019/140412.524:ERROR:service_manager_context.cc(171)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\61.0.3163.100\content_browser.service.exe
+
+10월 19, 2017 15:46:11.78 NEW SESSION
+10월 19, 2017 15:46:11.78 [7232:316:1019/154611.772:ERROR:service_manager_context.cc(171)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\61.0.3163.100\content_browser.service.exe
+
+10월 19, 2017 20:08:04.24 NEW SESSION
+10월 19, 2017 20:08:04.24 [17476:11200:1019/200804.246:ERROR:service_manager_context.cc(171)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\61.0.3163.100\content_browser.service.exe
+10월 19, 2017 20:08:04.27 [17476:11200:1019/200804.246:ERROR:service_manager_context.cc(171)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\61.0.3163.100\content_browser.service.exe
+10월 19, 2017 20:08:04.29 [17476:11200:1019/200804.246:ERROR:service_manager_context.cc(171)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\61.0.3163.100\content_browser.service.exe
+10월 19, 2017 20:08:04.29 [17476:11200:1019/200804.246:ERROR:service_manager_context.cc(171)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\61.0.3163.100\content_browser.service.exe
+10월 19, 2017 20:08:04.30 [17476:11200:1019/200804.246:ERROR:service_manager_context.cc(171)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\61.0.3163.100\content_browser.service.exe
+10월 19, 2017 20:08:04.30 [17476:11200:1019/200804.246:ERROR:service_manager_context.cc(171)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\61.0.3163.100\content_browser.service.exe
+10월 19, 2017 20:08:04.32 [17476:11200:1019/200804.246:ERROR:service_manager_context.cc(171)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\61.0.3163.100\content_browser.service.exe
+
+10월 20, 2017 24:13:24.42 NEW SESSION
+10월 20, 2017 24:13:24.42 [16976:18788:1020/001324.423:ERROR:CONSOLE(400)] "Uncaught (in promise) TypeError: Cannot read property 'indexOf' of null", source: chrome-devtools://devtools/bundled/inspector.js (400)
+10월 20, 2017 24:13:24.71 [16976:18788:1020/001324.713:ERROR:CONSOLE(400)] "Uncaught (in promise) TypeError: Cannot read property 'indexOf' of null", source: chrome-devtools://devtools/bundled/inspector.js (400)
+10월 20, 2017 24:49:38.08 [16516:16184:1020/004938.084:ERROR:CONSOLE(400)] "Uncaught (in promise) TypeError: Cannot read property 'indexOf' of null", source: chrome-devtools://devtools/bundled/inspector.js (400)
+10월 20, 2017 24:49:38.31 [16516:16184:1020/004938.312:ERROR:CONSOLE(400)] "Uncaught (in promise) TypeError: Cannot read property 'indexOf' of null", source: chrome-devtools://devtools/bundled/inspector.js (400)
+10월 20, 2017 24:50:44.87 [16516:16184:1020/005044.877:ERROR:CONSOLE(400)] "Uncaught (in promise) TypeError: Cannot read property 'indexOf' of null", source: chrome-devtools://devtools/bundled/inspector.js (400)
+10월 20, 2017 01:05:35.29 [16516:17768:1020/010535.295:ERROR:service_manager.cc(156)] Connection InterfaceProviderSpec prevented service: content_plugin from binding interface: memory_instrumentation::mojom::Coordinator exposed by: content_browser
+10월 23, 2017 16:22:42.51 [19904:20084:1023/162242.515:ERROR:service_manager_context.cc(171)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\61.0.3163.100\content_browser.service.exe
+10월 23, 2017 16:22:42.54 [19904:20084:1023/162242.515:ERROR:service_manager_context.cc(171)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\61.0.3163.100\content_browser.service.exe
+10월 23, 2017 16:22:42.54 [19904:20084:1023/162242.515:ERROR:service_manager_context.cc(171)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\61.0.3163.100\content_browser.service.exe
+10월 23, 2017 16:22:42.56 [19904:20084:1023/162242.515:ERROR:service_manager_context.cc(171)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\61.0.3163.100\content_browser.service.exe
+10월 23, 2017 16:22:42.56 [19904:20084:1023/162242.515:ERROR:service_manager_context.cc(171)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\61.0.3163.100\content_browser.service.exe
+10월 23, 2017 16:22:42.57 [19904:20084:1023/162242.515:ERROR:service_manager_context.cc(171)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\61.0.3163.100\content_browser.service.exe
+10월 23, 2017 16:22:42.57 [19904:20084:1023/162242.515:ERROR:service_manager_context.cc(171)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\61.0.3163.100\content_browser.service.exe
+10월 23, 2017 16:25:50.67 [13900:17400:1023/162550.673:ERROR:service_manager_context.cc(171)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\61.0.3163.100\content_browser.service.exe
+10월 23, 2017 16:25:50.68 [13900:17400:1023/162550.673:ERROR:service_manager_context.cc(171)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\61.0.3163.100\content_browser.service.exe
+10월 23, 2017 16:25:50.68 [13900:17400:1023/162550.673:ERROR:service_manager_context.cc(171)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\61.0.3163.100\content_browser.service.exe
+10월 23, 2017 16:25:50.70 [13900:17400:1023/162550.673:ERROR:service_manager_context.cc(171)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\61.0.3163.100\content_browser.service.exe
+10월 23, 2017 16:25:50.72 [13900:17400:1023/162550.673:ERROR:service_manager_context.cc(171)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\61.0.3163.100\content_browser.service.exe
+10월 23, 2017 16:25:50.72 [13900:17400:1023/162550.673:ERROR:service_manager_context.cc(171)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\61.0.3163.100\content_browser.service.exe
+10월 23, 2017 16:25:50.73 [13900:17400:1023/162550.673:ERROR:service_manager_context.cc(171)] Attempting to run unsupported native service: C:\Program Files (x86)\Google\Chrome\Application\61.0.3163.100\content_browser.service.exe
+
+10월 27, 2017 16:49:10.37 NEW SESSION
+10월 27, 2017 16:49:10.37 [12420:19284:1027/164910.305:ERROR:gpu_process_transport_factory.cc(930)] Lost UI shared context.
+10월 27, 2017 19:39:14.54 [12420:19284:1027/193914.546:ERROR:gcm_channel_status_request.cc(127)] GCM channel request failed.
+10월 27, 2017 19:39:14.74 [12420:16792:1027/193914.574:ERROR:connection_factory_impl.cc(386)] Failed to connect to MCS endpoint with error -21

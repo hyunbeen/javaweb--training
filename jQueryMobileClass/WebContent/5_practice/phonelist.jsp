@@ -1,0 +1,136 @@
+<%@ page contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page import="java.util.*" %>
+    
+<%
+response.setHeader("cache-control","no-cache"); 
+
+List<String[]> phoneDb = (List<String[]>) session.getAttribute("phoneDb");
+String id="";
+if(phoneDb==null)
+{	
+	id="p1";
+}else{
+	id = "p"+String.valueOf(phoneDb.size()+1);
+}
+request.setCharacterEncoding("UTF-8");
+String pname = request.getParameter("pname");
+String text = request.getParameter("text");
+String pcolor = request.getParameter("pcolor");
+String pcompany = request.getParameter("pcompany");
+String pprice = request.getParameter("pprice");
+
+
+
+String[] product = {id,pname,text,pcolor,pcompany,pprice};
+
+if(phoneDb==null){
+	phoneDb = new ArrayList<String[]>();
+	if(pname!=null){
+		phoneDb.add(product);
+	}
+	
+}else{
+	if(pname!=null){
+		phoneDb.add(product);
+	}
+}
+session.setAttribute("phoneDb",phoneDb);
+
+int currentPage = 1;
+int limit = 4;
+int start = (currentPage-1) * limit;
+int totalPage = phoneDb.size() / limit;
+if(phoneDb.size()%limit != 0) totalPage++;
+%>
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>jQuery Mobile</title> 
+		<meta charset="euc-kr" /> 	
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+		
+		<link rel="shortcut icon" href="../image/icon.png">
+		<link rel="apple-touch-icon" href="../image/icon.png"> 
+		
+		<link rel="stylesheet" href="../jQueryLibs/jquery.mobile-1.4.5.css" />
+		<script src="../jQueryLibs/jquery-1.11.0.min.js"></script>	
+		<script src="../jQueryLibs/jquery.mobile-1.4.5.min.js"></script>	
+
+		<script type="text/javascript">
+		function btnHide(){
+			if($('#home').attr('data-login')=='ok'){
+				$('#btnLogin').hide();
+				$('#btnLogout').show();
+				$('#btnPhoneList').attr('href','phonelist.jsp?currentPage=1');
+			}else{
+			$('#btnLogin').show();
+			$('#btnLogout').hide();
+			$('#btnPhoneList').attr('href','#');
+			}
+		}
+		$(document).bind('pagebeforeshow',function(evt){
+			btnHide();
+		});
+		function logout(){
+			$('#home').attr('data-login','');
+			btnHide();
+		}
+		</script>
+</head>
+<body>
+<div id="phonelist" data-role="page" data-theme="a">
+	<div data-role="header" data-position="fixed" data-theme="a">
+		<h1>폰 목록</h1>
+		<%if(currentPage > 1) {%>
+				<a href="phonelist.jsp?currentPage=<%=currentPage-1%>"
+					data-role="button"
+					data-icon="arrow-l"
+					data-direction="reverse">이전</a>
+		<%}%>
+		<%if(currentPage < totalPage) {%>
+				<a href="phonelist.jsp?currentPage=<%=currentPage+1%>"
+					data-role="button"
+					data-icon="arrow-r"
+					data-iconpos="right"
+					class="ui-btn-right">다음</a>
+		<%}%>
+	</div>  
+	
+	<div data-role="content">
+		<ul data-role="listview">
+			<%for(int i=start; i<(start+limit) && i<phoneDb.size(); i++) {%>
+					<li>
+						<a href="phonedetail.jsp?pno=<%=phoneDb.get(i)[0]%>&currentPage=<%=currentPage%>">
+							<table>
+								<tr>
+									<td style="padding-right: 5px">
+										<img src="../image/<%=phoneDb.get(i)[2]%>" 
+												style="width:30px; height:50px"/>
+									</td>
+									<td style="padding-left: 5px"><%=phoneDb.get(i)[1]%></td>
+								</tr>
+							</table>
+						</a>
+					</li>
+			<%}%>
+		</ul>
+    </div>
+
+	<div data-role="footer" data-position="fixed" data-theme="a">
+    	<div data-role="navbar">
+    		<ul>
+				<li><a href="#home" 
+						data-icon="home" 
+						data-transition="slide" 
+						data-direction="reverse">앱홈</a></li>
+				<li><a href="phonesaveform.jsp" 
+						data-icon="plus" 
+						data-transition="slide">폰등록</a></li>
+			</ul>
+		</div>
+    </div>
+</div>
+</body>
+</html>

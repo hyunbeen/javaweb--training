@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+var arr = ['송혜교','김태희','전지현','아이린'];
+//for(var i=0;i<arr.length;i++){
+for(var i in arr){
+	document.write(arr[i]+'</br>')
+}
+
+var obj = {kor : "안녕", eng : 'hello', jan : "곤니찌와"};
+for(var j in obj){
+		document.write(j + ":" + obj[j] + "<br/>")
+	}
+
+var book = {};
+book.writer = "홍길동";
+book.price = 10000;
+book.title = "홍길동의 후예";
+for(var k in book){
+	document.write(book[k]+'/');
+}
+</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html> 
+<html> 
+	<head>
+		<title>jQuery Mobile</title>
+		<meta charset="euc-kr" /> 	
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+		
+		<link rel="shortcut icon" href="../image/icon.png">
+		<link rel="apple-touch-icon" href="../image/icon.png"> 
+		
+		<link rel="stylesheet" href="../jQueryLibs/jquery.mobile-1.4.2.css" />
+		<script src="../jQueryLibs/jquery-1.11.0.min.js"></script>
+		<script src="../jQueryLibs/jquery.mobile-1.4.2.min.js"></script>
+		
+		<!-- 헤더와 푸터가 검정색으로 나오고  -->
+		<!-- <link href="../jQueryLib_ex/jquery.mobile-1.3.2.min.css" rel="stylesheet" type="text/css" />
+		<script src="../jQueryLib_ex/jquery-1.11.0.min.js"></script>
+		<script src="../jQueryLib_ex/jquery.mobile-1.3.2.min.js"></script>	 -->
+	</head> 
+
+	<body>
+		<div data-role="page">
+			<div data-role="header">
+				<h1>리스트</h1>
+			</div>
+
+			<div data-role="content">
+			   <!-- 1. 순서있는 리스트와 순서없는 리스트 -->
+				<!-- <ul data-role="listview">
+					<li> 갠역시 </li>
+					<li> 아이뽀 </li>
+					<li> 엘쥐</li>
+				</ul>
+				<ol data-role="listview">
+					<li> 갠역시 </li>
+					<li> 아이뽀 </li>
+					<li> 엘쥐</li>
+				</ol> -->
+				
+				<!-- 2. 여백주기 -->
+				<!-- <ul data-role="listview" data-inset="true">
+					<li data-icon="home"><a href="#"> 갠역시 </a></li>
+					<li><a href="#"> 아이뽀 </a></li>
+					<li><a href="#"> 엘쥐</a></li>
+				</ul> -->
+				
+				<!-- 3. 항목구분자(그룹명) 추가 -->
+				<!-- 4. 필터링하기  -->
+				<!-- <ul data-role="listview" data-inset="true" data-filter="true">
+					<li data-role="list-divider">애인</li>
+					<li><a href="#">석호필</a></li>
+					<li><a href="#">강동원</a></li>
+					<li><a href="#">김태평</a></li>
+					<li data-role="list-divider">친구</li>
+					<li><a href="#">김태희</a></li>
+					<li><a href="#">송혜교</a></li>
+					<li><a href="#">유희열</a></li>
+					<li><a href="#">김태자</a></li>
+					<li><a href="#">김태숙</a></li>
+					<li><a href="#">김태이</a></li>
+				</ul> -->
+
+				<!-- 5. Split 버튼 추가 -->
+				<!-- <ul data-role="listview" data-inset="true" data-split-icon="delete" data-split-theme="b">
+					<li><a href="#"> 갠역시 </a><a href="#">삼숭에서미는뽄</a></li>
+					<li><a href="#"> 아이뽀 </a><a href="#">사과에서미는뽄</a></li>
+					<li><a href="#"> 엘쥐</a><a href="#" data-icon="home" data-theme="z">엘쥐에서미는뽄</a></li>
+				</ul>  -->
+				
+				<!-- 6. 이미지리스트 ( 썸네일이미지 ) -->
+				<!-- <ul data-role="listview">
+					<li><a href="#"><img src="../image/album-ws.jpg" />이탈리아음악</a></li>
+					<li><a href="#"><img src="../image/album-ok.jpg" />라틴음악</a></li>
+					<li><a href="#"><img src="../image/album-mg.jpg" />미쿡음악</a></li>
+					<li><a href="#"><img src="../image/album-k.jpg" />유럽음악</a></li> 					
+					
+					<table style="width:100%">
+						<tr>
+							<td style="width:30%"><img src="../image/album-ws.jpg" width="50%" height=""/></td>
+							<td style="width:50%">
+								<table>
+									<tr><td>상점명</td></tr>
+									<tr><td>전화번호</td></tr>
+									<tr><td>별표</td></tr>
+								</table>
+							</td>
+							<td style="width:20%"><img src="../image/item_image1.png" /></td>
+						</tr>
+					</table>
+				</ul>	 -->
+				
+				<!-- 7. 이미지리스트 ( 아이콘이미지 ) -->
+				<!-- <ul data-role="listview">
+					<li><a href="#"><img src="../image/de.png" class="ui-li-icon"/>독일</a></li>
+					<li><a href="#"><img src="../image/fi.png" class="ui-li-icon"/>핀란드</a></li>
+					<li><a href="#"><img src="../image/gb.png" class="ui-li-icon"/>영국</a></li>
+					<li><a href="#"><img src="../image/gf.png" class="ui-li-icon"/>프랑스</a></li>
+					<li><a href="#"><img src="../image/sj.png" class="ui-li-icon"/>노르웨이</a></li>
+					<li><a href="#"><img src="../image/us.png" class="ui-li-icon"/>미국</a></li>
+				</ul>	 -->
+				
+				<!-- 8. 카운트버블 추가 -->
+				<!-- <ul data-role="listview" data-inset="true" data-count-theme="b">
+					<li data-role="list-divider" ><span class="ui-li-count">3</span>애인</li>
+					<li><a href="#">석호필</a></li>
+					<li><a href="#">강동원</a></li>
+					<li><a href="#">김태평</a></li>
+					<li data-role="list-divider"><span class="ui-li-count">6</span>친구</li>
+					<li><a href="#">김태희<span class="ui-li-count">학교</span></a></li>
+					<li><a href="#">송혜교<span class="ui-li-count">회사</span></a></li>
+					<li><a href="#">유희열<span class="ui-li-count">학교</span></a></li>
+					<li><a href="#">최민식<span class="ui-li-count">동네</span></a></li>
+					<li><a href="#">원빈<span class="ui-li-count">회사</span></a></li>
+					<li><a href="#">현빈<span class="ui-li-count">회사</span></a></li>
+				</ul> -->
+				
+				<!--  9. 텍스트서식  -->
+				<ul data-role="listview" data-theme="e"  data-filter="true" data-filter-placeholder="작가명을 입력하세요">
+					<li data-role="list-divider">
+						신간도서
+					</li>
+					<li><a href="#">						
+							<h3>조정래</h3>
+							<p><strong>태백산맥</strong></p>
+							<p>태백산에 사는 한국인의 삶</p>
+							<p class="ui-li-aside"><strong>2000</strong>원</p>						
+					</a></li>
+					<li><a href="#">						
+						<h3>정유정</h3>
+						<p><strong>7년의 밤</strong></p>
+						<p>7년전의 그 날밤의 일</p>
+						<p class="ui-li-aside"><strong>1800</strong>원</p>						
+					</a></li>
+					<li data-role="list-divider">
+						베스트셀러
+					</li>
+					<li><a href="#">
+						<h3>정은궐</h3>
+						<p><strong>해를 품은 달</strong></p>
+						<p>일식이 있던 날의 남녀이야기.</p>
+						<p class="ui-li-aside"><strong>1700</strong>원</p>
+					</a></li>
+				</ul>
+				
+			</div>
+		</div>
+	</body>
+</html>
+

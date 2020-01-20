@@ -1,0 +1,63 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+		<title>jQuery Mobile</title> 
+		<meta charset="euc-kr" /> 	
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0,user-scalable=no"/>
+		
+		<link rel="shortcut icon" href="../image/icon.png">
+		<link rel="apple-touch-icon" href="../image/icon.png">
+		
+		<link rel="stylesheet" href="../jQueryLibs/jquery.mobile-1.4.5.css" />
+		<script src="../jQueryLibs/jquery-1.11.0.min.js"></script>
+		<script src="../jQueryLibs/jquery.mobile-1.4.5.min.js"></script>
+	</head> 
+
+	<body>
+		<div id="home" data-role="page">
+			<div data-role="header">
+				<h1>홈 화면</h1>
+			</div>  
+		"WebContent/1_basic/03_OneDOM.html"	
+			<div data-role="content">	
+				<a href="#loginform" data-role="button">로그인</a>
+				<a href="#phonelist" data-role="button">폰 리스트</a>
+			</div>
+		</div>
+
+		<div id="loginform" data-role="page">
+			<div data-role="header">
+				<h1>로그인</h1>
+				<a href="#" data-role="button" data-rel="back">이전</a>
+			</div>  
+			
+			<div data-role="content">	
+				<p>로그인 화면 입니다.</p>
+			</div>
+		</div>
+
+		<div id="phonedetail" data-role="page">
+			<div data-role="header">
+				<h1>상세 내용</h1>
+				<a href="#" data-role="button" data-rel="back">이전</a>
+			</div>  
+			
+			<div data-role="content">	
+				<p>이 핸드폰은 겁나 까리하게 이쁜 폰입니다.</p>
+			</div>
+		</div>
+
+		<div id="phonelist" data-role="page">
+			<div data-role="header">
+				<h1>폰 리스트</h1>
+				<a href="#" data-role="button" data-rel="back">이전</a>
+			</div>  
+			
+			<div data-role="content">	
+				<p><a href="#phonedetail">겁나 이쁜 폰</a></p>
+				<p><a href="#phonedetail">무거운 폰</a></p> 
+				<p><a href="#phonedetail">무쟈게 큰 폰</a></p>
+			</div>
+		</div>
+	</body>
+</html>

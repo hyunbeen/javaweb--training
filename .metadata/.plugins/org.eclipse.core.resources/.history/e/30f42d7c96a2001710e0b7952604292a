@@ -1,0 +1,105 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page import="guest.model.*,guest.service.*" %>   
+<%@ page import="java.util.List" %>
+ 
+<%
+	String pageNum = request.getParameter("page");
+	if(Integer.parseInt(pageNum)<1){//현재 페이지
+	pageNum = "1";
+	}
+	// 전체 메세지 레코드 검색 
+	ListMessageService service = ListMessageService.getInstance();
+	List <Message> mList =  service.getMessageList(pageNum);
+	int totalPage = service.getTotalCount();
+	if(Integer.parseInt(pageNum)>totalPage){
+		pageNum = String.valueOf(totalPage);
+	}
+	
+	int group_per_page_cnt = 10;
+	
+// 	현재 페이지(정수) / 한페이지 당 보여줄 페지 번호 수(정수) + (그룹 번호는 현제 페이지(정수) % 한페이지 당 보여줄 페지 번호 수(정수)>0 ? 1 : 0)
+	int group_no = Integer.parseInt(pageNum)/group_per_page_cnt+( Integer.parseInt(pageNum)%group_per_page_cnt>0 ? 1:0);
+//		현재 그룹번호 = 현재페이지 / 페이지당 보여줄 번호수 (현재 페이지 % 페이지당 보여줄 번호 수 >0 ? 1:0)	
+//	ex) 	14		=	13(몫)		=	 (66 / 5)		1	(1(나머지) =66 % 5)			  
+	
+	int page_eno = group_no*group_per_page_cnt;		
+//		현재 그룹 끝 번호 = 현재 그룹번호 * 페이지당 보여줄 번호 
+//	ex) 	70		=	14	*	5
+	int page_sno = page_eno-(group_per_page_cnt-1);	
+// 		현재 그룹 시작 번호 = 현재 그룹 끝 번호 - (페이지당 보여줄 번호 수 -1)
+//	ex) 	66	=	70 - 	4 (5 -1)
+	
+	if(page_eno>totalPage){
+//	   현재 그룹 끝 번호가 전체페이지 수 보다 클 경우		
+		page_eno=totalPage;
+//	   현재 그룹 끝 번호와 = 전체페이지 수를 같게
+	}
+	
+	int prev_pageno = page_sno-group_per_page_cnt;  // <<  *[이전]* [21],[22],[23]... [30] [다음]  >>
+//		이전 페이지 번호	= 현재 그룹 시작 번호 - 페이지당 보여줄 번호수	
+//	ex)		46		=	51 - 5				
+	int next_pageno = page_sno+group_per_page_cnt;	// <<  [이전] [21],[22],[23]... [30] *[다음]*  >>
+//		다음 페이지 번호 = 현재 그룹 시작 번호 + 페이지당 보여줄 번호수
+//	ex)		56		=	51 - 5
+	if(prev_pageno<1){
+//		이전 페이지 번호가 1보다 작을 경우		
+		prev_pageno=1;
+//		이전 페이지를 1로
+	}
+	if(next_pageno>totalPage){
+//		다음 페이지보다 전체페이지 수보가 클경우		
+		next_pageno=totalPage/group_per_page_cnt*group_per_page_cnt+1;
+//		next_pageno=total_page
+//		다음 페이지 = 전체페이지수 / 페이지당 보여줄 번호수 * 페이지당 보여줄 번호수 + 1 
+//	ex)			   = 	76 / 5 * 5 + 1	???????? 		
+	}
+%>    
+<!DOCTYPE html> 
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title> 방명록 목록 </title>
+<script type="text/javascript">
+</script>
+</head>
+<body>
+
+	<% if( mList.isEmpty() ) { %>
+		남겨진 메세지가 하나도~~없습니다. <br>
+	<% } else { %>
+	<table border="1">
+	
+	<%for(Message m : mList){ %> 	
+		
+		<tr>	
+			<td><%= m.getId() %> </td> 
+			<td><%= m.getGuestName() %> </td> 
+			<td name='del'><a href='deleteMessage.jsp?mId=<%= m.getId() %>'>삭제</a></td>			
+		</tr>
+		<tr>
+			<td colspan='3'> 
+			<textarea cols=35 rows=3 style="font-family: '돋움', '돋움체'; font-size: 10pt; font-style: normal; line-height: normal; color: #003399;background-color:#D4EBFF;border:1 solid #00009C;">
+			<%= m.getMessage() %>
+			</textarea>
+			</td>
+		</tr>
+		
+	<%}%>
+	</table>
+	
+	<% } // end if-else %>
+
+	
+	
+	<a href="listMessage.jsp?page=1">[맨앞으로]</a>
+	<a href="listMessage.jsp?page=<%=prev_pageno%>">[이전]</a>
+	<% for(int i=startpage;i<=endpage;i++){ %>
+	<a href='listMessage.jsp?page=<%=i%>'>[<%= i %>]</a>
+	<%}//end of for i %>...
+	<a href="listMessage.jsp?page=<%=next_pageno%>" >[다음]</a>
+	<a href="listMessage.jsp?page=<%=total_page %>">[맨뒤로]</a>
+	 
+	<a href='insertMessage.jsp'>글쓰기</a>
+</body>
+</html>

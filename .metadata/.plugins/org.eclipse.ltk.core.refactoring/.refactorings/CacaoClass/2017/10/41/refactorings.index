@@ -1,0 +1,245 @@
+1507692305473	Delete element
+1507692340058	Rename package 'mvc.guest.command'
+1507692350106	Rename package 'mvc.guest.control'
+1507692359143	Rename package 'mvc.guest.model'
+1507692418302	Rename package 'mybatis.board.mapper'
+1507692442068	Rename package 'mybatis.board.service'
+1507692923211	Delete element
+1507692962023	Rename package 'mybatis.board.session'
+1507695598509	Copy file
+1507695599727	Copy file
+1507695600464	Copy file
+1507695601128	Copy file
+1507695601815	Copy file
+1507695602362	Copy file
+1507695602862	Copy file
+1507695603378	Copy file
+1507695603894	Copy file
+1507695604378	Copy file
+1507695604909	Copy file
+1507695605519	Copy file
+1507695605909	Copy file
+1507695606362	Copy file
+1507695606956	Copy file
+1507695607394	Copy file
+1507695607784	Copy file
+1507695608300	Copy file
+1507695608722	Copy file
+1507695609175	Copy file
+1507695609628	Copy file
+1507695610003	Copy file
+1507695610456	Copy file
+1507695610974	Copy file
+1507695611458	Copy file
+1507696403265	Rename resource 'NewFile.jsp'
+1507696412215	Rename resource 'NewFile10.jsp'
+1507696425817	Rename resource 'NewFile11.jsp'
+1507696433155	Rename resource 'NewFile12.jsp'
+1507696441897	Rename resource 'NewFile13.jsp'
+1507696450663	Rename resource 'NewFile14.jsp'
+1507696477403	Rename resource 'movecarrier.jsp'
+1507696492329	Rename resource 'NewFile15.jsp'
+1507696510683	Rename resource 'NewFile16.jsp'
+1507696517341	Rename resource 'NewFile17.jsp'
+1507696521607	Rename resource 'NewFile18.jsp'
+1507696536185	Rename resource 'NewFile19.jsp'
+1507696544098	Rename resource 'NewFile2.jsp'
+1507696551554	Rename resource 'NewFile20.jsp'
+1507696560570	Rename resource 'NewFile21.jsp'
+1507696612010	Rename resource 'NewFile22.jsp'
+1507696619568	Rename resource 'NewFile23.jsp'
+1507696626897	Rename resource 'NewFile24.jsp'
+1507696635147	Rename resource 'NewFile25.jsp'
+1507696641266	Rename resource 'NewFile26.jsp'
+1507696647047	Rename resource 'NewFile3.jsp'
+1507696659954	Rename resource 'NewFile4.jsp'
+1507696667057	Rename resource 'NewFile5.jsp'
+1507696677256	Rename resource 'NewFile6.jsp'
+1507696717444	Delete element
+1507696758669	Delete element
+1507696790645	Copy compilation unit
+1507696792613	Copy compilation unit
+1507696793848	Copy compilation unit
+1507696794801	Copy compilation unit
+1507696795692	Copy compilation unit
+1507696801168	Rename type 'Info2'
+1507696829281	Rename type 'Info3'
+1507696833781	Rename type 'Info4'
+1507696840744	Rename type 'Info'
+1507696851885	Rename type 'Info5'
+1507696856838	Rename type 'Info6'
+1507697569711	Delete elements
+1507697605462	Rename resource 'carriercheck.jsp'
+1507697611339	Rename resource 'carrierlist.jsp'
+1507697617167	Rename resource 'categorylist.jsp'
+1507697637433	Rename resource 'characterlist.jsp'
+1507697670236	Rename resource 'customfaq.jsp'
+1507697677299	Rename resource 'customnotice.jsp'
+1507697683901	Rename resource 'detailproduct.jsp'
+1507697689307	Rename resource 'login.jsp'
+1507697695455	Rename resource 'logincheck.jsp'
+1507697700074	Rename resource 'main.jsp'
+1507697718450	Rename resource 'Logincheck.jsp'
+1507697728410	Rename resource 'Login.jsp'
+1507697734532	Rename resource 'Main.jsp'
+1507697746566	Rename resource 'loginCheck.jsp'
+1507697755285	Rename resource 'mycancel.jsp'
+1507697760220	Rename resource 'mychoose.jsp'
+1507697773094	Rename resource 'mydetailorder.jsp'
+1507697780050	Rename resource 'myorder.jsp'
+1507697790797	Rename resource 'myquestion.jsp'
+1507697799213	Rename resource 'myquestionregister.jsp'
+1507697814222	Rename resource 'nonlogin.jsp'
+1507697827592	Rename resource 'order.jsp'
+1507697890152	Rename resource 'orderaddrsearch.jsp'
+1507697899513	Rename resource 'orderAddrsearch.jsp'
+1507697909580	Rename resource 'cacaoOrder.jsp'
+1507697928564	Rename resource 'registeragree.jsp'
+1507697985177	Rename resource 'registercheck.jsp'
+1507697999757	Rename resource 'registercomplete.jsp'
+1507698005213	Rename resource 'registerinfo.jsp'
+1507698081696	Rename resource 'cacaoLogin.jsp'
+1507698091462	Rename resource 'cacaoLoginCheck.jsp'
+1507698110682	Copy file
+1507698122309	Rename resource 'loginMain.jsp'
+1507698138526	Rename resource 'loginCheck.jsp'
+1507702976026	Rename resource 'cacaoNonLogin.jsp'
+1507702985501	Rename resource 'carrierCheck.jsp'
+1507702993419	Rename resource 'carrierList.jsp'
+1507703077111	Rename resource 'categoryList.jsp'
+1507703111853	Delete elements
+1507703120643	Delete elements
+1507703124550	Copy file
+1507703125128	Copy file
+1507703125613	Copy file
+1507703126066	Copy file
+1507703126535	Copy file
+1507703126910	Copy file
+1507703127441	Copy file
+1507703127910	Copy file
+1507703128379	Copy file
+1507703128863	Copy file
+1507703129286	Copy file
+1507703129833	Copy file
+1507703130255	Copy file
+1507703130661	Copy file
+1507703131098	Copy file
+1507703131473	Copy file
+1507703132020	Copy file
+1507703132520	Copy file
+1507703133098	Copy file
+1507703133567	Copy file
+1507703134998	Copy file
+1507703135568	Copy file
+1507703136035	Copy file
+1507703136507	Copy file
+1507703148572	Rename resource 'cacaoMain10.jsp'
+1507703156228	Rename resource 'cacaoMain11.jsp'
+1507703166982	Rename resource 'cacaoMain12.jsp'
+1507703175149	Rename resource 'cacaoMain13.jsp'
+1507703179892	Rename resource 'cacaoMain14.jsp'
+1507703185985	Rename resource 'cacaoMain15.jsp'
+1507703197240	Rename resource 'cacaoMain16.jsp'
+1507703205302	Rename resource 'cacaoMain17.jsp'
+1507703215479	Rename resource 'cacaoMain18.jsp'
+1507703223702	Rename resource 'cacaoMain19.jsp'
+1507703232574	Rename resource 'cacaoMain2.jsp'
+1507703339457	Rename resource 'cacaoMain20.jsp'
+1507703351562	Rename resource 'cacaoMain21.jsp'
+1507703359421	Rename resource 'pCateDoll.jsp'
+1507703373001	Rename resource 'cacaoMain22.jsp'
+1507703386573	Rename resource 'cacaoMain23.jsp'
+1507703394298	Rename resource 'cacaoMain24.jsp'
+1507703425169	Rename resource 'cacaoMain25.jsp'
+1507703438893	Rename resource 'cacaoMain3.jsp'
+1507703447218	Rename resource 'cacaoMain4.jsp'
+1507703455297	Rename resource 'cacaoMain5.jsp'
+1507703466253	Rename resource 'cacaoMain6.jsp'
+1507703479642	Rename resource 'cacaoMain7.jsp'
+1507703489246	Rename resource 'cacaoMain8.jsp'
+1507703630730	Rename resource 'cacaoMain9.jsp'
+1507703639649	Copy file
+1507703640259	Copy file
+1507703640915	Copy file
+1507703653639	Rename resource 'cacaoMain2.jsp'
+1507703660337	Rename resource 'cacaoMain3.jsp'
+1507703667369	Rename resource 'cacaoMain4.jsp'
+1507703828592	Rename package 'cacao.command'
+1507703834358	Rename package 'cacao.control'
+1507703884098	Rename package 'cacao.service'
+1507704093453	Rename type 'Command'
+1507704106770	Rename type 'CommandNull'
+1507704112707	Rename type 'CommandException'
+1507704121720	Rename type 'CommandList'
+1507704127345	Rename type 'CommandDelete'
+1507704132173	Rename type 'CommandInput'
+1507704141202	Rename type 'GuestControl'
+1507704158237	Rename package 'cacao.session'
+1507704200752	Rename package 'mvc.cacao.command'
+1507704278208	Rename package 'cacao.model'
+1507704304909	Rename package 'cacao.mapper'
+1507705841992	Delete elements
+1507706180559	Rename type 'Qa'
+1507706279289	Copy compilation unit
+1507707487859	Delete elements
+1507707495121	Copy compilation unit
+1507707495683	Copy compilation unit
+1507707496246	Copy compilation unit
+1507707496876	Copy compilation unit
+1507707497407	Copy compilation unit
+1507707497954	Copy compilation unit
+1507707498470	Copy compilation unit
+1507707499017	Copy compilation unit
+1507707499563	Copy compilation unit
+1507707500157	Copy compilation unit
+1507707500704	Copy compilation unit
+1507707501251	Copy compilation unit
+1507707501845	Copy compilation unit
+1507707502392	Copy compilation unit
+1507707502923	Copy compilation unit
+1507707503485	Copy compilation unit
+1507707504063	Copy compilation unit
+1507707504610	Copy compilation unit
+1507707505157	Copy compilation unit
+1507707505751	Copy compilation unit
+1507707506282	Copy compilation unit
+1507707506876	Copy compilation unit
+1507707507423	Copy compilation unit
+1507707507954	Copy compilation unit
+1507707508501	Copy compilation unit
+1507707609638	Rename type 'CmdDelete'
+1507707617138	Rename type 'CmdDelete10'
+1507707633027	Rename type 'CmdDelete11'
+1507707658327	Rename type 'CmdDelete12'
+1507707669682	Rename type 'CmdDelete13'
+1507707693001	Rename type 'CmdDelete14'
+1507707702566	Rename type 'CmdDelete15'
+1507707716810	Rename type 'CmdDelete16'
+1507707737902	Rename type 'CmdDelete17'
+1507707763295	Rename type 'CmdDelete18'
+1507707782759	Rename type 'CmdDelete19'
+1507707799936	Rename type 'CmdDelete2'
+1507707825785	Rename type 'CmdDelete20'
+1507707835691	Rename type 'CmdDelete21'
+1507707905220	Rename type 'CmdDelete22'
+1507707958651	Rename type 'CmdDelete23'
+1507707963088	Rename type 'CmdDetailView'
+1507707995417	Rename type 'CmdDelete24'
+1507708019091	Rename type 'CmdDelete25'
+1507708122948	Rename type 'CmdDelete26'
+1507708150999	Rename type 'CmdDelete27'
+1507708162796	Rename type 'CmdDelete3'
+1507708212228	Rename type 'CmdDelete4'
+1507708225446	Rename type 'CmdDelete5'
+1507708240915	Rename type 'CmdDelete6'
+1507708252502	Rename type 'CmdDelete7'
+1507708268319	Rename type 'CmdDelete8'
+1507708279464	Rename type 'CmdDelete9'
+1507708285793	Copy compilation unit
+1507708287074	Copy compilation unit
+1507708296254	Rename type 'CmdServiceMain2'
+1507708305879	Rename type 'CmdServiceMain3'
+1507708535362	Rename resource 'BoardMapper.xml'
+1507708546720	Rename type 'BoardService'
+1507708555064	Rename type 'BoardRepository'
+1507710154922	Copy folders

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>date</title>
+<style type="text/css">
+#date{}
+</style>
+
+
+<script type="text/javascript">
+	
+	window.onload = function(){
+	document.write("<form name='frm'>");	
+	document.write("<input type='button' id='minus' name='minus' value='<' onclick = 'minus()'>");	
+	document.write("<input type='text' name='month' value=9 >");
+	document.write("<input type='button' id='plus' name='plus' value='>' onclick = 'plus()'>"); 
+	document.write("</form>");
+		var d = new Date();
+		
+		i=parseInt(document.frm.month.value);
+		
+		d.setMonth(i-1);
+		d.setDate(1);
+	
+		var day = parseInt(d.getDay());
+		var k = 1;
+		var last;
+		
+		switch(i){
+		case 1 : last = 31; break;
+		case 2 : last = 28; break;
+		case 3 : last = 31; break;
+		case 4 : last = 30; break;
+		case 5 : last = 31; break;
+		case 6 : last = 30; break;
+		case 7 : last = 31; break;
+		case 8 : last = 31; break;
+		case 9 : last = 30; break;
+		case 10 : last = 31; break;
+		case 11 : last = 30; break;
+		case 12 : last = 31; break;
+		}
+		
+		document.write("<div id='date'>");
+
+		document.write("<table id='screen' border=2px>");
+		document.write("<tr>")
+		document.write("<td>"+'일'+"</td>");
+		document.write("<td>"+'월'+"</td>");
+		document.write("<td>"+'화'+"</td>");
+		document.write("<td>"+'수'+"</td>");
+		document.write("<td>"+'목'+"</td>");
+		document.write("<td>"+'금'+"</td>");
+		document.write("<td>"+'토'+"</td>");
+		document.write("</tr>")
+		for(i=0;i<5;i++){
+			document.write("<tr>");
+			for(j=0;j<7;j++){
+				if(day>0){
+					day--;
+					document.write("<td>"+"</td>");
+				}
+				else if(k<=last)
+				{
+					document.write("<td>"+k+"</td>");
+					k++
+				}
+				else{
+					document.write("<td>"+"</td>");
+				}
+				
+			}
+			
+			document.write("</tr>");
+		}
+		document.write("</table>");
+		document.write("</div>");
+		document.write("</form>");
+		var btn1 = document.getElementById('plus');
+		btn1.onclick = plus;
+		var btn2 = document.getElementById('minus');
+		btn2.onclick = minus;
+	
+		
+		function plus(){
+			var obj = document.getElementById('date');
+			document.body.removeChild(obj);
+			
+			document.frm.month.value = parseInt(document.frm.month.value)+1;
+			var d = new Date();
+			
+			i=parseInt(document.frm.month.value);
+			
+			d.setMonth(i-1);
+			d.setDate(1);
+		
+			var day = parseInt(d.getDay());
+			var k = 1;
+			var last;
+			
+			switch(i){
+			case 1 : last = 31; break;
+			case 2 : last = 28; break;
+			case 3 : last = 31; break;
+			case 4 : last = 30; break;
+			case 5 : last = 31; break;
+			case 6 : last = 30; break;
+			case 7 : last = 31; break;
+			case 8 : last = 31; break;
+			case 9 : last = 30; break;
+			case 10 : last = 31; break;
+			case 11 : last = 30; break;
+			case 12 : last = 31; break;
+			}
+			
+			document.write("<div id='date'>");
+
+			document.write("<table id='screen' border=2px>");
+			document.write("<tr>")
+			document.write("<td>"+'일'+"</td>");
+			document.write("<td>"+'월'+"</td>");
+			document.write("<td>"+'화'+"</td>");
+			document.write("<td>"+'수'+"</td>");
+			document.write("<td>"+'목'+"</td>");
+			document.write("<td>"+'금'+"</td>");
+			document.write("<td>"+'토'+"</td>");
+			document.write("</tr>")
+			for(i=0;i<5;i++){
+				document.write("<tr>");
+				for(j=0;j<7;j++){
+					if(day>0){
+						day--;
+						document.write("<td>"+"</td>");
+					}
+					else if(k<=last)
+					{
+						document.write("<td>"+k+"</td>");
+						k++
+					}
+					else{
+						document.write("<td>"+"</td>");
+					}
+					
+				}
+				
+				document.write("</tr>");
+			}
+			document.write("</table>");
+			document.write("</div>");
+			
+			}
+		
+		
+		
+		function minus(){
+			
+			var obj = document.getElementById('date');
+			document.body.removeChild(obj);
+			
+			document.frm.month.value = parseInt(document.frm.month.value)-1;
+			var d = new Date();
+			
+			i=parseInt(document.frm.month.value);
+			
+			d.setMonth(i-1);
+			d.setDate(1);
+		
+			var day = parseInt(d.getDay());
+			var k = 1;
+			var last;
+			
+			switch(i){
+			case 1 : last = 31; break;
+			case 2 : last = 28; break;
+			case 3 : last = 31; break;
+			case 4 : last = 30; break;
+			case 5 : last = 31; break;
+			case 6 : last = 30; break;
+			case 7 : last = 31; break;
+			case 8 : last = 31; break;
+			case 9 : last = 30; break;
+			case 10 : last = 31; break;
+			case 11 : last = 30; break;
+			case 12 : last = 31; break;
+			}
+			
+			document.write("<div id='date'>");
+
+			document.write("<table id='screen' border=2px>");
+			document.write("<tr>")
+			document.write("<td>"+'일'+"</td>");
+			document.write("<td>"+'월'+"</td>");
+			document.write("<td>"+'화'+"</td>");
+			document.write("<td>"+'수'+"</td>");
+			document.write("<td>"+'목'+"</td>");
+			document.write("<td>"+'금'+"</td>");
+			document.write("<td>"+'토'+"</td>");
+			document.write("</tr>")
+			for(i=0;i<5;i++){
+				document.write("<tr>");
+				for(j=0;j<7;j++){
+					if(day>0){
+						day--;
+						document.write("<td>"+"</td>");
+					}
+					else if(k<=last)
+					{
+						document.write("<td>"+k+"</td>");
+						k++
+					}
+					else{
+						document.write("<td>"+"</td>");
+					}
+					
+				}
+				
+				document.write("</tr>");
+			}
+			document.write("</table>");
+			document.write("</div>");
+			
+			}
+	}
+	
+	
+	
+
+
+</script>
+
+<script type="text/javascript">
+// window.onload = function (){
+// 	var btn = document.getElementById('plus');
+// 	plus.onclick = plus_click;
+// 	function btn_click(){
+		
+// 	}
+// }
+</script>
+</head>
+<body>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="../lib/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
+<style type="text/css">
+	.active { border : 3px solid red;}
+</style>
+<script type="text/javascript">
+$(function(){
+	
+	
+// 	$('ul>li.woman').css("color","red");
+// 	$('ul>li.man').css("color","blue");
+	$('ul>li:even').css("background","lightpink");
+	$('ul>li:odd').css("background","lightblue");
+	
+	
+	
+	var redBox = $('.inputText');
+	
+	redBox.each(function(){
+		
+		$(this).focus(function(){
+			$(this).addClass('active');
+		});
+		
+		//포커스를 잃었을 때 active 클래스를 삭제하기
+		
+		$(this).blur(function(){
+			$(this).removeClass('active');
+		});
+	
+	
+	});
+	
+	//복수개일때는 each 함수 돌리기
+	
+	
+	
+	$('.data').each(function(){
+		$(this).click(function(){
+			alert($(this).text());//getter
+			
+		});
+		
+	});
+	
+	$('#divText').click(function(){
+		
+		$('#divText').empty();
+		$('#divText>img').html("<img src='images/cat.jpg' />");//setter //img 태그 삽입
+	});
+	
+	var puppy = $('p>img').attr('src');//getter
+	var cat = puppy.replace('puppy','cat')
+
+	
+	$('p>img').hover(function(){
+		
+		$(this).attr('src',cat); //setter 역활
+		
+	},function(){
+		$(this).attr('src',puppy);
+	});
+});
+</script>
+</head>
+<body>
+
+<div id='divText'>여기를</div>
+<p>
+	<img src='images/puppy.jpg'/>
+</p>
+
+<div class='data'>이름</div>
+<div class='data'>나이</div>
+<div class='data'>직업</div>
+
+<hr/>
+<input type="text" class='inputText' />
+<input type="text" class='inputText' />
+<input type="text" class='inputText' />
+
+
+
+
+<hr/>
+<!-- 남자는 꽃분홍, 여자는 하늘색으로 배경색 지정 -->
+<ul>
+	<li class='man'>김수현</li>
+	<li class='woman'>아이유</li>
+	<li class='woman'>이효리</li>
+	<li class='woman'>김태희</li>
+	<li class='man'>이상순</li>
+</ul>
+</body>
+</html>

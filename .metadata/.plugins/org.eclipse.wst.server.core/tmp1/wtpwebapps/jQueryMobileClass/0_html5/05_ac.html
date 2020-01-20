@@ -1,0 +1,26 @@
+<!-- 
+	어플리케이션 캐쉬
+	: 서버와 통신이 안되는 상황에서 기본적인 공유소스(js/css/image등등)
+ -->
+<!DOCTYPE html> 
+<html manifest='05_ac.manifest'> 
+	<head> 
+		<meta charset="euc-kr" /> 	
+		<meta name="viewport" 
+				content="width=device-width, initial-scale=1.0, 
+							maximum-scale=1.0, minimum-scale=1.0, 
+							user-scalable=no"/>
+		<title>HTML5</title>
+		<link rel="stylesheet" type="text/css" href="05_ac.css">
+		<script type="text/JavaScript" src="05_ac.js"  charset='utf-8'></script>
+	</head>
+	<body onload="startPage()"> 
+		<div class='box'>Hello, Application Cache !</div>     
+		<img src="image/offline.png">
+		<img src="image/online.png">
+	</body>
+</html>
+
+ <!-- 참고할 사이트 
+ https://github.com/zziuni/HTML5Rocks_kr/tree/master/tutorials/appcache/beginner
+  -->

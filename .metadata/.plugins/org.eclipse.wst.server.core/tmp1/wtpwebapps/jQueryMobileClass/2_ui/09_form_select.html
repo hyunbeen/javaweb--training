@@ -1,0 +1,77 @@
+<!DOCTYPE html> 
+<html> 
+	<head>
+		<title>jQuery Mobile</title>
+		<meta charset="utf-8" /> 	
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+		
+		<link rel="shortcut icon" href="../image/icon.png">
+		<link rel="apple-touch-icon" href="../image/icon.png"> 
+		
+		<link rel="stylesheet" href="../jQueryLibs/jquery.mobile-1.4.2.css" />
+		<script src="../jQueryLibs/jquery-1.11.0.min.js"></script>
+		<script src="../jQueryLibs/jquery.mobile-1.4.2.min.js"></script>
+	</head> 
+
+	<body>
+		<div data-role="page">       
+			<div data-role="header" data-position="fixed">	    
+				<h1> 선택 </h1>
+			</div>
+
+			<div data-role="content">
+				<form id="joinForm" method="post" action="#">
+				
+				<!-- select -->
+					<div data-role="fieldcontain">
+						<label for="scholarship">학력:</label>
+						<select id="scholarship" name="scholarship" data-native-menu="false">
+							<!-- value가 없으면 첫번째 요소가 제목이 된다 -->
+							<!-- <option>선택하세요</option> -->
+							<option value="유치원졸">유치원졸</option>
+							<option value="초졸">초졸</option>
+							<option value="중졸" selected>중졸</option>
+							<option value="고졸">고졸</option>
+						</select>
+					</div>
+					
+				<!-- checkbox -->
+					<div  data-role="fieldcontain">
+						<fieldset data-role="controlgroup"> <!--  data-type="horizontal" -->
+							<legend>취미:</legend>						
+							<input id="hobby1" type="checkbox" name="hobby"/>
+							<label for="hobby1">축구</label>						
+							<input id="hobby2" type="checkbox" name="hobby" checked/>
+							<label for="hobby2">농구</label>
+							<input id="hobby3" type="checkbox" name="hobby"/>
+							<label for="hobby3">야구</label>				
+						</fieldset>
+					</div>
+
+					<!-- radio -->
+					<div data-role="fieldcontain">
+						<fieldset data-role="controlgroup"> <!--  data-type="horizontal" -->
+							<legend>직업:</legend>
+							<input id="radio1" type="radio" name="job" />
+							<label for="radio1">개발자</label>
+							<input id="radio2"  type="radio" name="job" checked="checked"/>
+							<label for="radio2">디자이너</label>    
+							<input id="radio3"  type="radio" name="job"/>
+							<label for="radio3">관리자</label> 
+						</fieldset>
+					</div>
+			
+					<!-- flip toggle -->
+					<div data-role="fieldcontain">
+						<label for="flipToggle">상태:</label>
+						<select id="flipToggle" name="flipToggle" data-role="slider">
+							<option value="꺼짐">꺼짐</option>
+							<option value="켜짐" selected>켜짐</option>
+						</select>
+					</div>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
+

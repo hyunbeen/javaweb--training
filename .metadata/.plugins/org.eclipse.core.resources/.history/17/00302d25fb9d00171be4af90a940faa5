@@ -1,0 +1,123 @@
+/**
+ * 
+ */
+
+$(document).ready(function(){
+	
+	
+	$('.menuCount').each(function(){
+		var selTag = $(this);
+		selTag.click(function(){
+			var cnt = selTag.val();
+			var span = selTag.parent().find('span');
+			var listtbl = $('#listTable');
+			var alltr = listtbl.find('.mtable');
+			var condition = 0;
+			var money = 0;
+			
+			
+			
+			
+			if(cnt == 0){
+				condition = 2;
+			}
+			
+			if(condition!=2)
+				{	
+					
+					cal(alltr);
+					
+					if(condition==0){
+						var tr = $('<tr/>');
+						tr.attr("class",'mtable');
+						tr.attr("value",span.eq(1).text());
+						var td1 = $('<td/>');
+						var td2 = $('<td/>');
+						var td3 = $('<td/>');
+						
+						//alert(span.eq(0).text() +"/" + span.eq(1).text());
+						
+						td1.text(span.eq(0).text());
+						td2.text(cnt);
+						td3.html('<img class="del" src="images/휴지통.jpg" width=20 height=20/>');
+						
+						tr.append(td1);
+						tr.append(td2);
+						tr.append(td3);
+						
+						listtbl.append(tr);
+						money = 0;
+						$('.mtable').each(function(){
+							
+							money += parseInt($(this).find('td').eq(1).text())*parseInt($(this).attr('value'));
+							$('#total').val(money);
+							
+							
+						});
+					}
+				}else{
+					alert("0은 삽입되지 않습니다");
+				}
+			
+			$('.del').unbind('click').bind('click',function(){
+			
+				if($(this).parent().parent().find('td').eq(1).text()==1)
+					{
+					$(this).parent().parent().remove();
+					zero =1;
+					}
+				else{
+					$(this).parent().parent().find('td').eq(1).text(parseInt($(this).parent().parent().find('td').eq(1).text())-1) ;
+					
+				}
+				$('#total').val(0);
+				money = 0;
+				$('.mtable').each(function(){
+					
+					
+					money += parseInt($(this).find('td').eq(1).text())*parseInt($(this).attr('value'));
+					$('#total').val(money);
+					
+					
+				});
+				
+				
+			
+			});
+			
+			
+			
+			
+		});
+		
+		
+		
+		
+	});
+	
+	
+	
+});
+
+function cal(alltr){
+	
+	
+	$(function(){
+		var money=0;
+		
+		alltr.each(function(){
+			
+			
+			if($(this).find('td').eq(0).text()==span.eq(0).text()){
+				$(this).find('td').eq(1).text(parseInt($(this).find('td').eq(1).text())+parseInt(cnt));
+				condition = 1;
+			}
+			
+			
+			money += parseInt($(this).find('td').eq(1).text())*parseInt($(this).attr('value'));
+			$('#total').val(money);
+			
+			});
+	});
+	
+}

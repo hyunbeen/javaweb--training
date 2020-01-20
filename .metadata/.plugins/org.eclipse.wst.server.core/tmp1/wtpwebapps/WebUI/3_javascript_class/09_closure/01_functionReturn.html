@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+//-----즉시 실행 함수
+
+// var func = function(num){
+// 	document.write('num='+num);
+// }(3);
+
+var byensu = function(num){
+// 	var fun = function(){
+// 		--num;
+// 		document.write('num>'+num+'<br/>');
+		
+// 	}
+	// 함수도 리턴이 됨
+	return function(){
+ 		--num;
+ 		document.write('num>'+num+'<br/>');
+	}
+}(10);
+byensu();
+// byensu();
+// byensu();
+</script>
+</head>
+<body>
+
+</body>
+</html>

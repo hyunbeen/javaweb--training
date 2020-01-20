@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Audio</title>
+<style type="text/css">
+input{
+	width:100px;
+}
+</style>
+<script type="text/javascript">
+var audio = new Audio("../media/IU.mp3");
+
+function togglePlay(){
+	var btn = document.getElementById('control');
+	if(audio.stoped || audio.paused){
+		btn.innerHTML = '정지';
+		audio.play();
+	
+	}else {
+		btn.innerHTML = '재생';
+		audio.pause();
+	}
+}
+function toggleMute(){
+	var btn = document.getElementById('mute');
+	if(audio.muted){
+		btn.innerHTML = '음소거';
+		audio.muted = false;
+	
+	}else {
+		btn.innerHTML = '재생';
+		audio.muted = true;
+	}
+}
+</script>
+
+</head>
+<body>
+<div id="player">
+	<img src="../images/sample/sensitive.jpg" id="img"/><br/>
+	<button id="control" onclick="togglePlay()">play</button>
+	<button id="mute" onclick="toggleMute()">mute</button>
+</div>
+</body>
+</html>

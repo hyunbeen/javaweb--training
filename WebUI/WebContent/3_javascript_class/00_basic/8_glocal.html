@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+//1.형변환
+var n = '123abc';
+document.write(typeof(n) + '<br/>');
+document.write(Number(n) + '<br/>');
+document.write(parseInt(n) + '<br/>');
+document.write(parseFloat(n) + '<br/>');
+
+//2. 연산 : 문자열+숫자 -> 문자열
+document.write(123+'4'+'<br/>');
+document.write(123-'4'+'<br/>');
+
+document.write(typeof(123+'4')+'<br/>');
+document.write(typeof(123-'4')+'<br/>');
+
+//3. 악마의 메소드(?)
+var str = 'window.alert("잠좀깨봐봐")';
+alert(str);
+eval(str);
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

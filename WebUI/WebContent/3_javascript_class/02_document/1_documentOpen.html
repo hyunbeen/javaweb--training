@@ -1,0 +1,62 @@
+<!--
+
+ 1. 문서를 출력 
+ 
+	document.open()	: 문서의 출력을 시작
+	docuemnt.close(): 문서의 출력을 종료 
+					 (* open()으로 출력을 시작한 문서는 반드시 close()로 작업을 종료해야 함 )
+	document.clear(): 문서를 삭제 
+					 ( 다른 프레임이나 윈도우의 내용을 삭제하고 싶을 경우만 사용 )
+					 
+ 2. 문자열을 출력
+ 	document.write() : 문자열을 출력
+ 					 ( 문자열을 연결할 땐 + 나 ,(콤마)로 연결 )
+
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title> Document 예제 </title>
+<meta charset="UTF-8">
+<style type="text/css">
+
+</style>
+<style type="text/css">
+body{
+	 background-color: #ff00ff;
+}
+</style>
+<script type="text/Javascript">
+
+	
+	
+	window.onload = function (){
+		
+		var button = document.getElementById('button');
+		button.onclick = show_document;
+		function show_document()
+		{
+			//document.getElementById('')
+			var user = document.frm.userName.value;
+			var result = document.getElementById('result');
+			result.innerHTML = user + "님 반갑습니다."
+			//"우리 조 화이팅 하지마" con 텍스트필드에 출력
+			var con = document.getElementById('con');
+			con.value = '우리조 화이팅';
+		}
+	}
+
+</script>
+</head>
+
+<body>
+	<form name="frm">
+		당신의 이름은? <input type="text" name="userName" size="20">
+		<input type="button" id="button" value="눌려봐">결과
+		<input type='text' id='con' name='Result' size='10'/>
+	</form>
+	<div id='result'></div>
+</body>
+</html>
+

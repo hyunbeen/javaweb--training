@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+var saram = {};
+saram.name = '홍길동';
+saram.age = 22;
+
+var saram2 = {name : '홍길자',age:33}
+
+var members = [saram,saram2];
+
+members.push({ name :'김길동'});
+members.push({ name :'박길동' , age:25, job:'개발'});
+
+//members.pop();
+delete members[1];
+
+var add = function(a,b){
+	return a+b;
+}
+members.push(add);
+
+
+
+for(var i in members){
+	console.log(members[i]);
+}
+
+console.log(members[4](3,4));
+</script>
+</head>
+<body>
+
+</body>
+</html>

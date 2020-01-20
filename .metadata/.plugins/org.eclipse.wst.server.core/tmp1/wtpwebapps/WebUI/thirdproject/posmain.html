@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>POS</title>
+<link href="css/main.css" rel="stylesheet" type="text/css">
+
+<style type="text/css">
+#main {
+	width: 100%;
+}
+
+#submain {
+	width: 95%;
+	margin: 0 auto;
+}
+
+#leftdisplay {
+	margin-left: 5px;
+	margin-top: 5px;
+	float: left;
+}
+
+#rightdisplay {
+	margin-left: 5px;
+	margin-top: 5px;
+	float: left;
+}
+
+#menuTable {
+width: 400px;
+height: 485px;
+	border: solid 1px gray;
+	overflow:scroll;
+	overflow:auto;
+}
+</style>
+<script type="text/javascript">
+function insertMenuPay(bMenu){
+
+	var menuName1 = bMenu.title;
+	var price1 = bMenu.alt;
+	var count1 = 1;
+	
+	var tbl = document.getElementById('payTable');
+	
+	var tr = document.createElement('tr');
+	var td1 = document.createElement('td',{"Name":"menuName"});
+	var td2 = document.createElement('td');
+	var td3 = document.createElement('td');
+	
+	var txt1 = document.createTextNode(menuName1);
+	var txt2 = document.createTextNode(price1);
+	var txt3 = document.createTextNode(count1);
+	
+	td1.appendChild(txt1);
+	td2.appendChild(txt2);
+	td3.appendChild(txt3);
+	td1.setAttribute("name","menuName")
+	
+	tr.appendChild(td1);
+	tr.appendChild(td2);
+	tr.appendChild(td3);
+
+	tbl.appendChild(tr);
+
+}
+</script>
+<script type="text/javascript" src="jsp/TableMake1.js"></script>
+<script type="text/javascript" src="jsp/TableMake2.js"></script>
+
+
+
+</head>
+<body>
+	<form name='frm'>
+		<div id='main' name='main'>
+			<div id='submain' name='submain'>
+
+
+				<div id='leftdisplay' name = 'Leftdisplay'>
+					<input id="panel-1-ctrl" class="panel-radios" type="radio"
+						name="tab-radios" checked> 
+					<input id="panel-2-ctrl"
+						class="panel-radios" type="radio" name="tab-radios"> 
+					<input id="panel-3-ctrl" class="panel-radios" type="radio"
+						name="tab-radios">
+
+					<!-- TABS LIST -->
+					<ul id="tabs-list">
+						<!-- MENU TOGGLE -->
+						<li id="li-for-panel-1"><label class="panel-label"
+							for="panel-1-ctrl">Tab1</label></li>
+						<li id="li-for-panel-2"><label class="panel-label"
+							for="panel-2-ctrl">Tab2</label></li>
+						<li id="li-for-panel-3"><label class="panel-label"
+							for="panel-3-ctrl">Tab3</label></li>
+					</ul>
+
+					<!-- THE PANELS -->
+					<article id="panels" name="panels">
+						<div class="container" name="container">
+							<section id="panel-1" name="panel">
+								<main id="TableMenu" name = "TableMenu"> <script type="text/javascript">
+									TableMake1();
+								</script> </main>
+							</section>
+							<section id="panel-2">
+								<main>
+								<p>Content2</p>
+								</main>
+							</section>
+							<section id="panel-3">
+								<main>
+								<p>Content3</p>
+								</main>
+							</section>
+						</div>
+					</article>
+
+				</div>
+
+				<div id='rightdisplay'>
+					<!-- 		
+		<ol class="rounded-list">
+    		<li><a href="">List item</a></li>
+		    <li><a href="">List item</a></li>
+    		<li><a href="">List item</a></li>
+                  
+		</ol> 
+		-->			
+		
+					<script type="text/javascript">
+						TableMake2();
+					</script>
+			
+					<br />
+					<div id=inputField>
+						결제 방법 : <input type="radio" name='howinput' value='카드'>카드
+						<input type="radio" name='howinput' value='현금'>현금<br /> 받은
+						금액 : <input type="text" name='input' />
+					</div>
+
+					<div id='calcTable'>
+						<table>
+							<tr>
+								<th width='100px'>결 제 금 액</th>
+								<th width='60px'>방 법</th>
+								<th width='100px'>지 불 금 액</th>
+								<th width='100px'>거 스 름 돈</th>
+							</tr>
+							<tr>
+								<td id='calcM'></td>
+								<td id='howM'></td>
+								<td id='payM'></td>
+								<td id='changeM'></td>
+							</tr>
+						</table>
+						<div id='Paybtn'>
+							<table >
+								<tr>
+									<td colspan="2" width='180px'><a href="#"
+										class="btn-gradient green">계산</a></td>
+									<td colspan="2" width='180px'><a href="#"
+										class="btn-gradient purple">취소</a></td>
+								</tr>
+							</table>
+						</div>
+
+
+					</div>
+
+				</div>
+				<!-- rightdisplay -->
+			</div>
+			<!-- submain -->
+
+		</div>
+	</form>
+	<!-- main -->
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+
+.bg{background :yellow;}
+.borderRed{border : 3px solid red;}
+.borderBlue{border : 2px dashed blue;}
+
+</style>
+<script type="text/javascript" src='../lib/jquery-3.1.1.js'></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+// 		$('li:first').css('border','3px dotted green');
+// 		$('li').first().css('border','3px dotted green');
+
+		
+// 		$('li:even').css('border','3px dotted green');
+// 		$('li:eq(4)').css('border','3px dotted green');
+// 		$('li:lt(3)').css('border','3px dotted green');
+// 		$('li:not(li:first)').css('border','3px dotted green');
+// 		$('li:contains("튀김")').css('border','3px dotted green');
+
+//어묵을 포함한 요소들
+// 		$('li>ul>li:contains("어묵")').css('border','3px dotted green');
+// 		$('li:contains("어묵")').children().children().last().css('border','3px dotted green');
+//어묵을 포함한 요소들 중에 마지막 요소
+		
+// 		$('li').click(function(){
+// 			$(this).toggleClass('bg');
+// 		});
+		
+//0.li 요소에 마우스 올라가면 borderRed 클래스 적용하고 마우스 나가면 제거	
+// 		$('li').hover(function(){
+// 			$(this).toggleClass('borderRed');
+// 		});
+//1.li 요소에 마우스 올라가면 borderRed 클래스 적용하고 마우스 나가면 제거	
+// 		$('li').children().children().hover(function(){
+// 			$(this).toggleClass('borderRed');
+// 		});
+	
+//2.li 어묵 자식요소를 제외한 borderRed 클래스 적용하고 마우스 나가면 제거	
+// 	$('li:not(li:contains("어묵"):not(li:first))').hover(function(){
+// 			$(this).toggleClass('borderBlue');
+// 		});
+	
+	$('li:eq(4)').addClass('borderBlue');
+	$('li:nth-child(4)').addClass('borderRed');
+	
+	alert($('li').html());
+	alert($('li').text());
+	});
+
+</script>
+</head>
+<body>
+
+<h1>제이쿼리 연습</h1>
+
+<h3>내가 좋아하는 음식</h3>
+<ul id='food'>
+	<li>떡볶이</li>
+	<li>어묵</li>
+	<li>
+		<ul>
+			<li>어묵국</li>
+			<li>어묵튀김</li>
+			<li>어묵말이</li>	
+		</ul>
+	</li>
+	<li>새우튀김</li>
+	<li>만두튀김</li>
+	<li>야채튀김</li>
+	<li>고구마튀김</li>
+</ul>
+
+<h3>우리가 좋아하는 술</h3>
+<ul>
+	<li>1</li>
+	<li>2</li>
+	<li>3</li>
+	<li>4</li>
+	<li>5</li>
+	
+</ul>
+</body>
+</html>

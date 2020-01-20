@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>자바스크립트 변수와 범위</title>
+	<script>
+		//#### 전역변수와 지역변수
+		//---------변수 선언시 var 생략 가능 ====> 전역변수가 됨
+		//#### 지역변수는 var 를 쓰고 맨 앞에 지정하기
+		var scope = '글로벌변수';
+		function get(){
+			document.write('0>' + scope + '<br/>');
+			var scope =  '지역변수';
+			return scope;
+		}
+		document.write('1>'+get()+'<br/>'); //지역변수
+		document.write('2>'+scope+'<br/>'); //전역변수
+		
+		//####### 지역변수 범위 : 함수 안에서만
+		function test(){
+			j = 10;
+		}
+		test();
+		document.write("j="+j);//에러
+		if(true){
+			var j = 100;
+		}
+		document.write("j="+j);
+		
+		for(var k = 0;k<3;k++){};
+		document.write('1:'+k);
+		for(var k = 0;k<3;k++){};
+		document.write('2:'+k);
+		var k = 0;
+		document.write('3:'+k);
+	</script>
+</head>
+
+<body>
+
+  
+ </body>
+</html>

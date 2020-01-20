@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function closure(init){
+		var cnt = init;
+		return function(){
+			return ++cnt
+		};
+	}
+	var myFunc = closure(1);
+	document.write(myFunc()+'<br/>');
+	document.write(myFunc()+'<br/>');
+	document.write(myFunc()+'<br/>');
+</script>
+</head>
+<body>
+
+</body>
+</html>

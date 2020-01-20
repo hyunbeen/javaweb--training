@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src='../lib/jquery-3.1.1.min.js'></script>
+<script type="text/javascript">
+	
+	$(document).ready(function(){
+		$('#check').click(function(){
+			//각각의 화면에서 value 값을 얻어올 때 : val()
+			//각각의 입력값들을 id가 result 인곳에 출력
+			
+			$('#result').text($('#tf').val() + $('#ta').val() +  $('#sel').val() + $('input[type="radio"]:checked').val());
+		});
+	})
+
+
+
+	$(document).ready(function(){
+		$('#init').click(function(){
+			$('#tf').val("홍길동");
+			$('#ta').val("헬로");
+			$('#sel').val(["인천","그외"]);
+			$('input:radio[name="gender"][value="여자"]').attr('checked', 'checked');
+
+					
+			
+		});
+	})
+
+$(function(){
+	var actor = $('#actor');
+	actor.append($('#son'));
+	$('#gyen').appendTo(actor);
+	var n = $('<div/>');
+	n.text('아무개');
+	actor.append(n);
+});
+
+$(document).ready(function(){
+
+	$('#add').click(function(){
+		var actor = $('#tbl');
+		var tr = $('<tr/>');
+		var td1 = $('<td/>');
+		td1.text($('#tf').val());
+		var td2 = $('<td/>');
+		td2.text($('#sel').val());
+		var td3 = $('<td/>');
+		td3.text($('input[type="radio"]:checked').val());
+	
+		
+		
+		tr.append(td1);
+		tr.append(td2);
+		tr.append(td3);
+		actor.append(tr);
+	
+				
+		
+	});
+})
+
+</script>
+</head>
+<body>
+<div id ='actor'>배우</div>
+<div id ='son'>손호준</div>
+<div id ='gyen'>견미리</div>
+<hr/>
+<hr/>
+<div id='result'></div><hr/>
+이름 : <input id='tf' type='text' size=20/><br/>
+인사말 : <textarea id='ta' row='4' cols='50'></textarea><br/>
+출신지 : <select id='sel' multiple = 'multiple'>
+<option>서울</option>
+<option>인천</option>
+<option>제주</option>
+<option>그외</option>
+</select></br>
+남자<input name='gender' type='radio' value='남자'>여자<input name='gender' type='radio' value='여자'></br>
+<input type='button' id='check' value='확인'/><input type='button' id='init' value='초기화'/>
+<input type='button' id='add' value='추가'/>
+<hr/><hr/>
+<table id='tbl' border=2>
+<td>이름</td><td>출신지</td><td>성별</td>
+</table>
+
+
+</body>
+</html>
